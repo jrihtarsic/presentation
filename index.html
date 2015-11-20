@@ -1,1 +1,199 @@
-test.html
+<!doctype html>
+
+<!--
+Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github.com/impress/impress.js)
+    
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Prestavitev EVIP</title>
+    
+    <meta name="description" content="EVIP predstavitev" />
+    <meta name="author" content="Joze Rihtarsic" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div  class="step slide" data-x="-1000" data-y="-1500">
+        <q><center><img src="images/VSRS.png" alt="Smiley face" height="156px" width="158px" /> <br/>
+<b>Projekt EVIP</b><br/><b style='font-size:30px;'>(Evidenca vhodne in izhodne pošte)</b>
+</q>
+<q style="font-size:50%">
+<br/>Tomaž Tomšič (Projektni vodja)
+		<br/>mag. Jože Rihtaršič (Tehnični vodja)</center></q>
+    </div>
+
+    <!--
+        
+        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
+        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
+        
+        So in the example below it'll be `step-2`.
+        
+        The hash part of the url when this step is active will be `#/step-2`.
+        
+        You can also use `#step-2` in a link, to point directly to this particular step.
+        
+        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
+        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
+        
+    -->
+    <div class="step slide" data-x="0" data-y="-1500">
+        
+<q><strong>Namen</strong>
+<ol>
+  <li>Uporabna modernih tehnologij</li>
+  <li>Specializacija dela</li>
+  <li>Zniževanje stroškov</li>
+  <li>Preglednost in nadzor</li>
+  <li>...</li>
+</ol>
+
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+	<q><strong>EVIP</strong><center><img src="images/evip.png" alt="Smiley face" height="550px" width="800px" /> </center></q>
+    </div>
+
+    <!--
+        
+        This is an example of step element being scaled.
+        
+        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
+        element will be 4 times larger than the others.
+        From presentation and transitions point of view it means, that it will have to be scaled
+        down (4 times) to make it back to its correct size.
+        
+    -->
+    <div id="title" class="step" data-x="0" data-y="1200" data-scale="8">
+<center>
+       <img src="images/presentation-circle.png" alt="Presentation circle" height="550px" width="550px" /></center>
+    </div>
+
+
+
+<div class="step" data-x="-300" data-y="-500" data-scale="3">
+<center>Izdelava pošiljk</center>
+
+    </div>
+
+<div class="step" data-x="-1500" data-y="300" data-scale="3" data-rotate="-45">
+<center>Odprema pošiljk</center>
+
+    </div>
+
+
+<div class="step" data-x="-1500" data-y="1800" data-scale="3"  data-rotate="-125">
+<center>Vročanje pošiljk</center>
+
+    </div>
+
+<div class="step" data-x="-300" data-y="2700" data-scale="3"  data-rotate="-180">
+<center>Povratnice</center>
+
+    </div>
+<div class="step" data-x="1200" data-y="1800" data-scale="3"  data-rotate="-265">
+<center>Pripenjanje <br /> povratnic na  <br />zadeve</center>
+
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    
+    Hint is not related to impress.js in any way.
+    
+    But it can show you how to use impress.js features in creative way.
+    
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+    
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+    
+    ...
+    
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+    
+    Just sayin' ;)
+    
+-->
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
+
