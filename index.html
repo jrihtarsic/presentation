@@ -6,194 +6,400 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 -->
 
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Prestavitev EVIP</title>
-    
-    <meta name="description" content="EVIP predstavitev" />
-    <meta name="author" content="Joze Rihtarsic" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Prestavitev EVIP</title>
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <meta name="description" content="EVIP predstavitev" />
+        <meta name="author" content="Joze Rihtarsic" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/evip.css" rel="stylesheet" />
 
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-</head>
-<body class="impress-not-supported">
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    </head>
+    <body class="impress-not-supported">
 
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+        <div class="fallback-message">
+            <p>Your browser  <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
 
-<div id="impress">
-    <div  class="step slide" data-x="-1000" data-y="-1500">
-        <q><center><img src="images/VSRS.png" alt="Smiley face" height="156px" width="158px" /> <br/>
-<b>Projekt EVIP</b><br/><b style='font-size:30px;'>(Evidenca vhodne in izhodne pošte)</b>
-</q>
-<q style="font-size:50%">
-<br/>Tomaž Tomšič (Projektni vodja)
-		<br/>mag. Jože Rihtaršič (Tehnični vodja)</center></q>
-    </div>
+        <div id="impress">
 
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        
-<q><strong>Namen</strong>
-<ol>
-  <li>Uporabna modernih tehnologij</li>
-  <li>Specializacija dela</li>
-  <li>Zniževanje stroškov</li>
-  <li>Preglednost in nadzor</li>
-  <li>...</li>
-</ol>
+            <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+            </div>
 
-    </div>
+            <div  class="step slide" data-x="-1000" data-y="-1500">
+                <center>
+                    <q><img src="images/VSRS.png" alt="Smiley face" height="156" width="158" /> <br/>
+                        <b>Projekt EVIP</b><br/><b style='font-size:30px;'>(Evidenca vhodne in izhodne pošte)</b>
+                    </q>
+                    <div style="font-size:50%">
+                        <br/>mag. Petra Čas (Predsednica Okrožnega sod. v Slovenj Gradcu)
+                        <br/>Tomaž Tomšič (vodja projekta eVložišče)                    
+                        <br/>mag. Jože Rihtaršič (tehnični vodja projekta eVložišče)
+                    </div>
+                </center>
+            </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-	<q><strong>EVIP</strong><center><img src="images/evip.png" alt="Smiley face" height="550px" width="800px" /> </center></q>
-    </div>
+            <!--
+                
+                The `id` attribute of the step element is used to identify it in the URL, but it's optional.
+                If it is not defined, it will get a default value of `step-N` where N is a number of slide.
+                
+                So in the example below it'll be `step-2`.
+                
+                The hash part of the url when this step is active will be `#/step-2`.
+                
+                You can also use `#step-2` in a link, to point directly to this particular step.
+                
+                Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
+                Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
+                
+            -->
+            <div class="step slide" data-x="0" data-y="-1500">
+                <header>Namen</header>
+                <section class="left-section">
 
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to its correct size.
-        
-    -->
-    <div id="title" class="step" data-x="0" data-y="1200" data-scale="8">
-<center>
-       <img src="images/presentation-circle.png" alt="Presentation circle" height="550px" width="550px" /></center>
-    </div>
+                Do 1900 Več dela se lahko opravi s povečevanjem delovnih ur-> nadure ali zaposlovanje<br />
+                Frederick Winslow Taylor (1856 - 1915)  <br />
+                Specializacijo in delitvijo dela lahko povečamo učinkovitost proizvodnih procesov. 
+                </section>
+<section class="right-section">
+                <img src="images/Frederick_Winslow_Taylor_2.jpg" alt="Frederick Winslow Taylor"  />
+                </section>
+            </div>
+
+            <div class="step slide" data-x="1000" data-y="-1500">
+                <header>Aplikacija EVIP (Evidenca vhodne in izhodne pošte)</header>
+                <center><img src="images/evip.png" alt="Smiley face" height="550" width="800" /> </center>
+            </div>
 
 
+            <div id="step" class="step" data-x="0" data-y="800" data-scale="5">
+                <center>
+                    <img src="images/cycle.svg" alt="Presentation circle" height="800" width="800" />
+                </center>
+            </div>
 
-<div class="step" data-x="-300" data-y="-500" data-scale="3">
-<center>Izdelava pošiljk</center>
+            <!-- 
+            ******************************************************
+            * PROCESS 
+            ******************************************************
+            -->
 
-    </div>
+            <div class="step process" data-x="400" data-y="-500" data-scale="1.5">
+                <header>DOLOČANJE POŠILJKE</header>
+                <section class="left-section">
+                    Na vpisniku<br />
+                    <img src="images/izdelava-posiljke.png" alt="Vpisnik" width='550'/>                    
+                </section>
+                <section class="right-section">
+                    <div style="text-align: right"><br/>
+                        Izbira vsebine<br/>
+                        Izbira naslovnika<br/>
+                        Izbira načina vročitve
+                    </div>
+                </section>
+            </div>
 
-<div class="step" data-x="-1500" data-y="300" data-scale="3" data-rotate="-45">
-<center>Odprema pošiljk</center>
+            <div id="ing" class="step process" data-x="1600" data-y="800" data-scale="1.5">
+                <header>ODPREMA POŠILJK</header>
+                <section class="left-section">
+                    - <b>Lokalna odprema:</b> kuvertiranje in odprema na sodišču;<br /> 
+                    - <b>Poštna cesta:</b> tiskanje pisanj, kuveritranje in odprema pri zunanjem izvajalcu;<br /> 
+                    - <b>Elektronsko vročanje:</b> elektronsko vročanje pdf vsebin.  
+                </section>
+                <section class="right-section">
+                    <img src="images/nacini-odpreme.png" width='380' height="400"/>                    
+                </section>
 
-    </div>
+            </div>
 
 
-<div class="step" data-x="-1500" data-y="1800" data-scale="3"  data-rotate="-125">
-<center>Vročanje pošiljk</center>
 
-    </div>
 
-<div class="step" data-x="-300" data-y="2700" data-scale="3"  data-rotate="-180">
-<center>Povratnice</center>
+            <div class="step" data-x="3600" data-y="600"  data-scale="1.5">
+                <header>Postp
+                    ki vročanja/ način odpreme</header>
+                <TABLE class ="evip-table" >
 
-    </div>
-<div class="step" data-x="1200" data-y="1800" data-scale="3"  data-rotate="-265">
-<center>Pripenjanje <br /> povratnic na  <br />zadeve</center>
+                    <TR class ="evip-table-header">
+                        <TD>Postopek vročitve / način odpreme</TD>
+                        <TD>Lokalna odprema</TD>
+                        <TD>Poštna cesta</TD>
+                        <TD>e-vročanje</TD>
+                    </TR>
+                    <TR>
+                        <TD>Navadno (C5 – bela kuverta)</TD>
+                        <TD>✓</TD>
+                        <TD>✓</TD>
+                        <TD>✓(email)</TD>
 
-    </div>
+                    </TR>
+                    <TR class="evip-table-alternateRow">
+                        <TD>Priporočeno (C5 – bela kuverta)</TD>
+                        <TD>✓</TD>
+                        <TD>o</TD>
+                        <TD><BR></TD>
 
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
+                    </TR>
+                    <TR>
+                        <TD>Priporočeno - tujina (C5 – bela kuverta)</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
 
-</div>
+                    </TR>
+                    <TR class="evip-table-alternateRow">
+                        <TD>OBR. SR. 38</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
 
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
+                    </TR>
+                    <TR>
+                        <TD>OBR. SR. 39</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
 
-<!--
-    
-    Last, but not least.
-    
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-    
-    In here I just include full source of the script to make it more readable.
-    
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
--->
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+                    </TR>
+                    <TR class="evip-table-alternateRow">
+                        <TD>Obrazec za K-vpisnik</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
+                    </TR>
+                    <TR>
+                        <TD>Slovenija CN 07</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
 
-<!--
-    
-    The `impress()` function also gives you access to the API that controls the presentation.
-    
-    Just store the result of the call:
-    
-        var api = impress();
-    
-    and you will get three functions you can call:
-    
-        `api.init()` - initializes the presentation,
-        `api.next()` - moves to next step of the presentation,
-        `api.prev()` - moves to previous step of the presentation,
-        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
-    
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
-    
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
-    
--->
+                    </TR>
+                    <TR class="evip-table-alternateRow">
+                        <TD>tujina CN 07</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
+                    </TR>
+                    <TR>
+                        <TD>ZPP navadno</TD>
+                        <TD>✓</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                    </TR>
+                    <TR class="evip-table-alternateRow">
+                        <TD>ZPP osebno</TD>
+                        <TD>✓</TD>
+                        <TD>✓</TD>
+                        <TD>✓ SVEV</TD>
+                    </TR>
+                    <TR>
+                        <TD>ZKP navadno</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
+                    </TR>
+                    <TR class="evip-table-alternateRow">
+                        <TD>ZKP osebno</TD>
+                        <TD>✓</TD>
+                        <TD><BR></TD>
+                        <TD><BR></TD>
+                    </TR>
+                    <TR>
+                        <TD>ZUP</TD>
+                        <TD>✓</TD>
+                        <TD>o</TD>
+                        <TD><BR></TD>
+                    </TR>
+                </TABLE>
+            </div>
+            <div class="step" data-x="3600" data-y="1600" data-scale="1"  >
+                <header>Poštna cesta</header>
+                <video width="854" height="480" controls>
+                    <source src="video/postna_cesta.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
 
-</body>
+            <div class="step process" data-x="400" data-y="2200" data-scale="1.5">
+                <header>VROČANJE POŠILJK</header>
+                <table><tr><td>
+                            <img src="images/vpisnik.png" alt="Vpisnik" />
+                        </td><td>
+                            <ol>
+                                <li>Izbira vsebine</li>
+                                <li>Izbira naslovnika</li>
+                                <li>Izbira načina vročitve</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="step  process" data-x="-800" data-y="800" data-scale="1.5">
+                <header>Digitalizacija povratnic</header>
+                <table><tr><td>
+                            <img src="images/vpisnik.png" alt="Vpisnik" />
+                        </td><td>
+                            <ol>
+                                <li>Izbira vsebine</li>
+                                <li>Izbira naslovnika</li>
+                                <li>Izbira načina vročitve</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+            <div class="step slide slide-oj" data-x="-2000" data-y="3500">
+                <header>Odprema pisanj z EVIP</header><br />
+                Kako smo to v sodelovanju s CIF napravili v Slovenj Gradcu 
+            </div>
+
+            <div class="step  slide slide-oj" data-x="-1000" data-y="3500">
+                <header>Priprava</header>
+                * reorganizacija vložišča
+
+                <ol style="padding-left:2em">
+                    <li> - sodelavci: <p style="padding-left:2em"> prej 2 osebi, zdaj 3</p></li>
+                    <li> - prostorska preureditev:<br /><p style="padding-left:2em">
+                      prej 1 soba na 15m2 <br />
+                      zdaj 3 sobe na 60m2 sprejem+odprema
+                        </p>
+                    </li>
+                    <li> - dodatna oprema za 1 delovno mesto:<br />
+                        <p style="padding-left:2em">1 računalnik<br />
+                        1 skener črtne kode<br />
+                        1 tiskalnik za kuverte s 5 predali</p>
+                    </li>
+            </div>
+
+
+            <div class="step slide slide-oj" data-x="0" data-y="3500">        
+                <header>Reorganizacija v sodnih pisarnah</header>
+                <b>reorganizacija odpreme</b>
+                <ol style="padding-left:2em">
+                    <li>- KLASIČNA POŠTA <p style="padding-left:2em">
+                    sodne pisarne I, PUND, Bpp, iK, PR,
+                    pisanja <span style="color:red;">“natisnejo preko EVIP-a”</span> in opremijo (list s črtno kodo, žigi, podpisi, priloge,....), spravijo v “barvne ovitke” in odložijo na prostor za odpremo
+                uslužbenec vložišča večkrat dnevno pobere ovitke in jih odnese v odpremni center</p>
+                    </li>
+                    <li>- VARNI ELEKTRONSKI PREDAL</li>
+                    <li>- E-POŠTA</li>
+                </ol>              
+            </div>
+            <div class="step slide slide-oj" data-x="1000" data-y="3500">
+                <header>Reorganizacija v odpremni pisarni</header>
+                <b>evidentiranje in kuvertiranje</b>
+                <ol style="padding-left:2em; ">
+                    <li>- zbrane pošiljke/ovitke  I, PUND, Bpp, iK, PR na osnovi črtne kode in EVIP-a skuvertiramo</li>
+                    <li>- na koncu delovnega dne seznam pošiljk elektronsko oddamo na pošto, natisnemo oddajnico</li>
+                </ol>      
+            </div>
+
+            <div class="step  slide slide-oj" data-x="2000" data-y="3500" data-scale="1"  >
+
+                <video width="854" height="480" controls>
+                    <source src="video/test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+
+
+
+
+
+
+            <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+            </div>
+
+        </div>
+
+        <!--
+            
+            Hint is not related to impress.js in any way.
+            
+            But it can show you how to use impress.js features in creative way.
+            
+            When the presentation step is shown (selected) its element gets the class of "active" and the body element
+            gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+            so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+            the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+            
+            This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+            the first step of presentation is visible for a couple of seconds.
+            
+            ...
+            
+            And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+            It's just a quick and dirty workaround to get different hint text for touch devices.
+            In a real world it should be at least placed in separate JS file ... and the touch content should be
+            probably just hidden somewhere in HTML - not hard-coded in the script.
+            
+            Just sayin' ;)
+            
+        -->
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div>
+        <script>
+            if ("ontouchstart" in document.documentElement) {
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+        </script>
+
+        <!--
+            
+            Last, but not least.
+            
+            To make all described above really work, you need to include impress.js in the page.
+            I strongly encourage to minify it first.
+            
+            In here I just include full source of the script to make it more readable.
+            
+            You also need to call a `impress().init()` function to initialize impress.js presentation.
+            And you should do it in the end of your document. Not only because it's a good practice, but also
+            because it should be done when the whole document is ready.
+            Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+            
+        -->
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+
+        <!--
+            
+            The `impress()` function also gives you access to the API that controls the presentation.
+            
+            Just store the result of the call:
+            
+                var api = impress();
+            
+            and you will get three functions you can call:
+            
+                `api.init()` - initializes the presentation,
+                `api.next()` - moves to next step of the presentation,
+                `api.prev()` - moves to previous step of the presentation,
+                `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                        id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                        but it's optional - if not provided default transition duration for the presentation will be used.
+            
+            You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+            Don't worry, it wont initialize the presentation again.
+            
+            For some example uses of this API check the last part of the source of impress.js where the API
+            is used in event handlers.
+            
+        -->
+
+    </body>
 </html>
 
