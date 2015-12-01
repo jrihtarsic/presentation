@@ -29,14 +29,13 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
         <div id="impress">
 
-         
 
-            <div  class="step slide" data-x="-1000" data-y="-1500">
-                
+
+            <div  class="step slide" data-x="-1000" data-y="-2500">
+
                 <center >
                     <q><img style="float: left" src="images/VSRS.png" alt="VSRS Logo" height="156" width="158" />
-                        <img style="float: right; margin-left: 10px" src="images/S13_glava_center.png" alt="OZ Slovenj Gradec" height="156" width="103" />
-                        <img style="float: right;"  src="images/S33_glava_center.png" alt="OZ Slovenj Gradec" height="156" width="103" /><br/>
+                        <img style="float: right; margin-left: 10px" src="images/S13_glava_center.png" alt="OZ Slovenj Gradec" height="156" width="103" />                        
                         <br/>
                         <b>Projekt EVIP</b><br/><b style='font-size:30px;'>(Evidenca vhodne in izhodne pošte)</b>
                     </q>
@@ -48,39 +47,68 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                 </center>
             </div>
 
-            <!--
-                
-                The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-                If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-                
-                So in the example below it'll be `step-2`.
-                
-                The hash part of the url when this step is active will be `#/step-2`.
-                
-                You can also use `#step-2` in a link, to point directly to this particular step.
-                
-                Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-                Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-                
-            -->
-            <div class="step slide" data-x="0" data-y="-1500">
+            <div class="step slide" data-x="0" data-y="-2500">
+
+                <header>Optimizacija poslovnih procesov</header>
+                <section >
+                    Do 1900 Več dela se lahko opravi s povečevanjem delovnih ur-> nadure ali zaposlovanje<br />                   
+                </section>
+                <section >
+                    <center>
+                        <img src="images/vec_dela_vec_ljudi.png" alt="Vec dela vec ur dela" width="500"  />
+                    </center>
+                </section>
+            </div>
+            <div class="step slide" data-x="200" data-y="-2600" data-scale="0.4" >
+
                 <header>Namen</header>
                 <section class="left-section">
 
-                Do 1900 Več dela se lahko opravi s povečevanjem delovnih ur-> nadure ali zaposlovanje<br />
-                Frederick Winslow Taylor (1856 - 1915)  <br />
-                Specializacijo in delitvijo dela lahko povečamo učinkovitost proizvodnih procesov. 
+                    Do 1900 Več dela se lahko opravi s povečevanjem delovnih ur-> nadure ali zaposlovanje<br />
+                    Frederick Winslow Taylor (1856 - 1915)  <br />
+                    Specializacijo in delitvijo dela lahko povečamo učinkovitost proizvodnih procesov. 
                 </section>
-<section class="right-section">
-                <img src="images/Frederick_Winslow_Taylor_2.jpg" alt="Frederick Winslow Taylor"  />
+                <section class="right-section">
+                    <img src="images/Frederick_Winslow_Taylor_2.jpg" alt="Frederick Winslow Taylor"  />
+
                 </section>
             </div>
 
-            <div class="step slide" data-x="1000" data-y="-1500">
+            <div class="step slide" data-x="1000" data-y="-2500">
                 <header>Aplikacija EVIP (Evidenca vhodne in izhodne pošte)</header>
                 <center><img src="images/evip.png" alt="Smiley face" height="550" width="800" /> </center>
             </div>
 
+
+            <div class="step slide" data-x="-800" data-y="-1500"  >
+                <header>Trenutno stanje evidentiranja in odprave pošiljk</header>
+
+                <ol style="padding-left:2em">
+                    <li>- sodišča letno odpravijo do 6 mio pošiljk</li>
+                    <li>- v centralni evidenci je evidentiranih dobrih 3.5 mio oz. 59%
+                        <br /> (od tega 2.360.525 oz. 66,6 % izvršilnih pošiljk)</li>
+                </ol>         
+            </div>
+            <div class="step " data-x="-1000" data-y="-1400" data-scale="0.5" >
+                <!-- header>Trenutno stanje evidentiranja in odprave pošiljk</header -->
+                <b>ročno evidentiranje</b>
+                <ol style="padding-left:2em">
+                    <li>- vpisovanje v obrazce Pošte</li>
+                    <li>- vpisovanje v preglednice</li>
+                    <li>- namenske aplikacije</li>
+                    <li>- predaja pošiljk Pošti brez popisa </li></ol>
+
+            </div>
+            <div class="step " data-x="-600" data-y="-1400"  data-scale="0.5" >
+
+                <b>EVIP omogoča: </b>
+                <ol style="padding-left:2em">
+                    <li>- centralizirano evidenco pošiljk</li>
+                    <li>- pregled nad pošiljkami</li>
+                    <li>- pregled nad stroški</li>
+                    <li>- enotno delovno okolje za odpravo iz različnih vpisnikov </li>
+
+                </ol></div>
 
             <div id="step" class="step" data-x="0" data-y="800" data-scale="5">
                 <center>
@@ -109,25 +137,8 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                 </section>
             </div>
 
-            <div id="ing" class="step process" data-x="1600" data-y="800" data-scale="1.5">
-                <header>ODPREMA POŠILJK</header>
-                <section class="left-section">
-                    - <b>Lokalna odprema:</b> kuvertiranje in odprema na sodišču;<br /> 
-                    - <b>Poštna cesta:</b> tiskanje pisanj, kuveritranje in odprema pri zunanjem izvajalcu;<br /> 
-                    - <b>Elektronsko vročanje:</b> elektronsko vročanje pdf vsebin.  
-                </section>
-                <section class="right-section">
-                    <img src="images/nacini-odpreme.png" width='380' height="400"/>                    
-                </section>
-
-            </div>
-
-
-
-
-            <div class="step" data-x="3600" data-y="600"  data-scale="1.5">
-                <header>Postp
-                    ki vročanja/ način odpreme</header>
+            <div class="step" data-x="800" data-y="-300"  data-scale="0.5">
+                <header>Postopki vročanja/ način odpreme</header>
                 <TABLE class ="evip-table" >
 
                     <TR class ="evip-table-header">
@@ -222,13 +233,40 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                     </TR>
                 </TABLE>
             </div>
-            <div class="step" data-x="3600" data-y="1600" data-scale="1"  >
+
+            <div id="ing" class="step process" data-x="1600" data-y="800" data-scale="1.5">
+                <header>ODPREMA POŠILJK</header>
+                <section class="left-section">
+                    - <b>Lokalna odprema:</b> kuvertiranje in odprema na sodišču;<br /> 
+                    - <b>Poštna cesta:</b> tiskanje pisanj, kuveritranje in odprema pri zunanjem izvajalcu;<br /> 
+                    - <b>Elektronsko vročanje:</b> elektronsko vročanje pdf vsebin.  
+                </section>
+                <section class="right-section">
+
+                </section>
+
+            </div>
+
+
+            <div class="step" data-x="1800" data-y="650" data-scale="0.4"  >
+                <header>Lokalna odprema</header>
+                <img src="images/lokalna_odprema.png" alt="Vpisnik"  width='800'/> 
+            </div>
+
+
+            <div class="step" data-x="2000" data-y="850" data-scale="0.4"  >
                 <header>Poštna cesta</header>
                 <video width="854" height="480" controls>
                     <source src="video/postna_cesta.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> 
             </div>
+            
+              <div class="step" data-x="1800" data-y="1050" data-scale="0.4"  >
+                <header>Elektronsko vročanje</header>
+                <img src="images/elektronsko-vrocanje.png" alt="Vpisnik"  width='800'/> 
+            </div>
+
 
             <div class="step process" data-x="400" data-y="2200" data-scale="1.5">
                 <header>VROČANJE POŠILJK</header>
@@ -263,17 +301,16 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
 
             <div class="step slide slide-oj" data-x="-2000" data-y="3500">
-                 <center>
-                    <q><img src="images/S13_glava_center.png" alt="OZ Slovenj Gradec" height="156" width="103" />
-                        <img src="images/S33_glava_center.png" alt="OZ Slovenj Gradec" height="156" width="103" /><br/>
+                <center>
+                    <q><img src="images/S13_glava_center.png" alt="OZ Slovenj Gradec" height="156" width="103" /><br/>
                         <b>Odprema pisanj z EVIP</b><br/><b style='font-size:30px;'> Kako smo to v sodelovanju s CIF napravili v Slovenj Gradcu </b>
                     </q>
                     <div style="font-size:80%">
                         <br/>mag. Petra Čas (Predsednica Okrožnega sod. v Slovenj Gradcu)
                     </div>
                 </center>
-                
-               
+
+
             </div>
 
             <div class="step  slide slide-oj" data-x="-1000" data-y="3500">
@@ -283,14 +320,14 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                 <ol style="padding-left:2em">
                     <li> - sodelavci: <p style="padding-left:2em"> prej 2 osebi, zdaj 3</p></li>
                     <li> - prostorska preureditev:<br /><p style="padding-left:2em">
-                      prej 1 soba na 15m2 <br />
-                      zdaj 3 sobe na 60m2 sprejem+odprema
+                            prej 1 soba na 15m2 <br />
+                            zdaj 3 sobe na 60m2 sprejem+odprema
                         </p>
                     </li>
                     <li> - dodatna oprema za 1 delovno mesto:<br />
                         <p style="padding-left:2em">1 računalnik<br />
-                        1 skener črtne kode<br />
-                        1 tiskalnik za kuverte s 5 predali</p>
+                            1 skener črtne kode<br />
+                            1 tiskalnik za kuverte s 5 predali</p>
                     </li>
             </div>
 
@@ -300,9 +337,9 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                 <b>reorganizacija odpreme</b>
                 <ol style="padding-left:2em">
                     <li>- KLASIČNA POŠTA <p style="padding-left:2em">
-                    sodne pisarne I, PUND, Bpp, iK, PR,
-                    pisanja <span style="color:red;">“natisnejo preko EVIP-a”</span> in opremijo (list s črtno kodo, žigi, podpisi, priloge,....), spravijo v “barvne ovitke” in odložijo na prostor za odpremo
-                uslužbenec vložišča večkrat dnevno pobere ovitke in jih odnese v odpremni center</p>
+                            sodne pisarne I, PUND, Bpp, iK, PR,
+                            pisanja <span style="color:red;">“natisnejo preko EVIP-a”</span> in opremijo (list s črtno kodo, žigi, podpisi, priloge,....), spravijo v “barvne ovitke” in odložijo na prostor za odpremo
+                            uslužbenec vložišča večkrat dnevno pobere ovitke in jih odnese v odpremni center</p>
                     </li>
                     <li>- VARNI ELEKTRONSKI PREDAL</li>
                     <li>- E-POŠTA</li>
