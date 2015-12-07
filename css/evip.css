@@ -112,6 +112,14 @@
     line-height: 46px;
     letter-spacing: -1px;
 }
+
+.movie {
+    width: 1300px;
+    height: 740px;
+    padding: 5px 5px;
+
+}
+
 .process header {
     background-color:#5b7785;
     border-radius: 10px;
