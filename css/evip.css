@@ -283,6 +283,16 @@ footer {
 
 }
 
+.navigation-bar  div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid black;
+
+}
 
 
 .navigation-bar  a {
