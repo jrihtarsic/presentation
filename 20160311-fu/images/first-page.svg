@@ -23,10 +23,10 @@
        id="linearGradient5772">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
+         offset="0.5"
          id="stop5774" />
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         style="stop-color:#000000;stop-opacity:0.6;"
          offset="1"
          id="stop5776" />
     </linearGradient>
@@ -47,7 +47,7 @@
        id="linearGradient5749">
       <stop
          style="stop-color:#5555ff;stop-opacity:1;"
-         offset="0"
+         offset="0.7"
          id="stop5751" />
       <stop
          style="stop-color:#5555ff;stop-opacity:0;"
@@ -106,7 +106,8 @@
        x2="1834.8101"
        y2="-267.57043"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,1.0756719,-13.4687,86.604565)" />
+       gradientTransform="matrix(1,0,0,1.0756719,-13.4687,86.604565)"
+       />
   </defs>
   <sodipodi:namedview
      id="base"
