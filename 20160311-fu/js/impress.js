@@ -184,10 +184,11 @@
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
         body.className += " impress-not-supported ";
-    } else {
+    } else {        
         body.classList.remove("impress-not-supported");
         body.classList.add("impress-supported");
     }
+    
     
     // GLOBALS AND DEFAULTS
     
