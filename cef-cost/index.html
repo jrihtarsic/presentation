@@ -136,8 +136,11 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
                 </section>
                 <section class="right-section" >
-                    Savings per year
+                    Paper mail cost per year<br /><br />
+
+                    <div id="g1_y_unit" style="font-size: 10pt">[EUR]</div>
                     <div class="ct-chart ct-perfect-fourth"  id="chart1"></div>
+                    <div id="g1_x_unit" style="font-size: 10pt; width: 100%; position: relative; top: -40px" align="right">year</div>
                     <script>
                         function datachanged() {
                             var g1_N = Number(document.getElementById("g1_N").value);
@@ -153,6 +156,14 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                             document.getElementById("g1_cost").value = cst;
 
                             var cstPerYear = cst * 200 * g1_N;
+                            var unt = "[EUR]";
+                            if (cstPerYear >= 1000000) {
+                                cstPerYear = cstPerYear / 1000000;
+                                unt = "mio [EUR]";
+                            } else if (cstPerYear >= 1000) {
+                                cstPerYear = cstPerYear / 1000;
+                                unt = "* 1000 [EUR]";
+                            }
                             var data = {
                                 // A labels array that can contain any sort of values
                                 labels: ['0', '1y', '2y', '3y', '4y', '5y'],
@@ -162,6 +173,7 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                                 ]
                             };
                             new Chartist.Line("#chart1", data);
+                            document.getElementById("g1_y_unit").innerHTML = unt;
                         }
 
                         datachanged();
@@ -169,8 +181,26 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
                 </section>                
             </div>
-
             <div class="step slide" data-x="1000" data-y="-2000">
+                <header>Reusable AS4 protocol </header>
+                <section>
+                    <ul>
+                        <li>Reusable component for security, reliability, addressing etc.</li>
+                        <li>Different bussiness transactions</li>
+                        <li>Single integration maintenance for all partners</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="images/purpose.svg" alt="Purpose" width="680" height="350"/>
+                    <p style="font-size: 12pt ">
+                     - From multi protocol environment to AS4 (From multi integration environment to single integration environment)
+                    </p>
+                </section>
+
+
+            </div>
+
+            <div class="step slide" data-x="2000" data-y="-2000">
                 <header>Reusable AS4 protocol </header>
                 <section class="left-section" >
                     Enter new parnters per year (P): <input id="g2_P" type="number" value="1" min=0 step=1   onchange="dataAS4changed();"/>
@@ -214,14 +244,15 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                             <td>System maintenance cost (mtc) [EUR/year]</td>
                             <td><input id="g2_mtc" type="number" value="2000"  min=0.0000 step="10"  onchange="dataAS4changed();" /></td>
                         </TR>
-
                     </table>
-
                 </section>
                 <section class="right-section" >
-                    <span style="color: blue">--</span> Custom protocol <br />
-                    <span style="color: red; ">--</span> AS4 protocol<br />
+                    <span style="color: blue">--</span> Custom protocol cost<br />
+                    <span style="color: red; ">--</span> AS4 protocol cost<br />
+                    
+                    <div id="g2_y_unit" style="font-size: 10pt">[EUR]</div>
                     <div class="ct-chart ct-perfect-fourth" id="chart2"></div>
+                    <div id="g2_x_unit" style="font-size: 10pt; width: 100%; position: relative; top: -40px" align="right">year</div>
                     <script>
                         function dataAS4changed() {
                             var g2_I = Number(document.getElementById("g2_I").value);
@@ -235,6 +266,21 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                             var y1Cst = g2_P * g2_I + g2_S * g2_Srv + g2_P * g2_mtc;
                             var y1As4 = g2_I + g2_Srv + g2_mtc + (g2_P - 1) * g2_AS4I + (g2_S - 1) * g2_AS4Srv;
                             var y2As4 = g2_P * g2_AS4I + g2_S * g2_AS4Srv;
+                            
+                            var unt = "[EUR]";
+                            if (y1Cst >= 1000000) {
+                                y1Cst = y1Cst / 1000000;
+                                y1As4 = y1As4 / 1000000;
+                                y2As4 = y2As4 / 1000000;
+                                
+                                unt = "mio [EUR]";
+                            } else if (y1Cst >= 1000) {
+                                y1Cst = y1Cst / 1000;
+                                y1As4 = y1As4 / 1000;
+                                y2As4 = y2As4 / 1000;
+                                unt = "* 1000 [EUR]";
+                            }
+                            
 
                             var data1 = {
                                 // A labels array that can contain any sort of values
@@ -245,25 +291,16 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                                         className: 'costsGraph1',
                                         name: 'customStandard',
                                         data: [0, y1Cst, y1Cst * 2, y1Cst * 3, y1Cst * 4, y1Cst * 5],
-                                    },{
+                                    }, {
                                         className: 'costsGraph2',
                                         name: 'AS4 standard',
-                                        data:[0, y1As4, y1As4 + y2As4, y1As4 + y2As4 * 2, y1As4 + y2As4 * 3, y1As4 + y2As4 * 4]
+                                        data: [0, y1As4, y1As4 + y2As4, y1As4 + y2As4 * 2, y1As4 + y2As4 * 3, y1As4 + y2As4 * 4]
                                     }
                                 ],
-                                
-                                
-                            };
 
-                            var options = {
-                                // Ticks to be used to distribute across the axis length
-                                // . As this axis type relies on the index of the value rather than the value, arbitrary data that can be converted to a string can be used as ticks.
-                                ticks: ['One', 'Two'],
-                                // If set to true the full width will be used to distribute the values where the last value will be at the maximum of the axis length. If false the spaces between the ticks will be evenly distributed instead.
-                                stretch: true
                             };
-
-                            new Chartist.Line('#chart2', data1, options);
+                            new Chartist.Line('#chart2', data1);
+                            document.getElementById("g2_y_unit").innerHTML = unt;
                         }
 
                         dataAS4changed();
@@ -283,7 +320,7 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
             <div id="overview" class="step end-remark" data-x="1500" data-y="-500" data-scale="5">
                 <div class ="end-remark" >
-Discussions
+                    Discussions
                 </div>
             </div>
 
