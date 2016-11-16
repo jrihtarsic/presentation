@@ -57,7 +57,12 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
                     <div  style='font-size:28px;line-height:28px;color: black;top:90px;left:150px;width: 600px; position: relative;'>IZVEDBA PILOTSKEGA PROJEKTA ZA NAMENE VZPOSTAVITVE
 OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
                 </div>
-
+                <div style="font-size:30px;line-height:30px;top:-130px;left:0;position: relative" >
+                    <center>
+                    Združenje bank Slovenije<br  />
+                    Vrhovno sodišče Repulike Slovenije</center>
+                </div>
+                
                 <div style="font-size:20px;line-height:30px;top:0px;left:500px;position: relative" >
                     Jože Rihtaršič, 16. 11. 2016 
                 </div>
@@ -69,13 +74,12 @@ OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
                 <section  >
                     Kazalo:
                     <ul>
-                        <li>Kalkulator stroškov izhodne/dohodne pošte.</li>
-                        <li>Projekt ZBS - VSRS.</li>
-                        <li>Namen aplikacije Laurentius.</li>
-                        <li>Kako poteka vročanje.</li>
-                        <li>Kje je transformacija.</li>
-                        <li>Povabilo k testiranju.</li>
-                        <li>Kaj je potrebno še narediti.</li>
+                        <li>kalkulator stroškov izhodne/dohodne pošte;</li>
+                        <li>projekt ZBS - VSRS (skupine, cilji in rezultati);</li>
+                        <li>aplikacija Laurentius;</li>
+                        <li>kako poteka vročanje;</li>
+                        <li>povabilo k testiranju;</li>
+                        <li>kaj je potrebno še narediti.</li>
 
                     </ul>
                 </section>       
@@ -88,7 +92,7 @@ OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
                     Izvršilni postopki:
                     <ul>
                         <li>Banke prejmejo iz sodišč cca 2500 pošiljk na dan.</li>
-                        <li>Banke pošljejo na sodišča cca 350 pošiljk na dan.</li>
+                        <li>Banke pošljejo na sodišča cca 350 pošiljk (obvestila) na dan.</li>
                     </ul>
                 </section>       
             </div>
@@ -307,13 +311,12 @@ OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
                     <ul style="font-size: 16pt ">
                         <li>Ponovna uporabnost komponent za varnost, zanesljivost, naslavljanje, itd.</li>
                         <li>Predvideva poslovne transakcije</li>
-                        <li>Vzdrževanje sistema na enem mestu za vse stranke in storitve</li>
+                        <li>Nadzora in vzdrževanje sistema na enem mestu za vse stranke/storitve</li>
                     </ul>
                 </section>
                 <section>
                     <center><img src="images/purpose.svg" alt="Purpose"  height="350"/></center>
-                    <p style="font-size: 16pt ">
-                        - Prehod iz okolja namenski protokolov v poenotenje protokola za zagotavljanje
+                    <p style="font-size: 16pt ">Prehod iz okolja namenski protokolov v poenotenje protokola za zagotavljanje
                         varnosti, zanesljivosti, naslavljanja, dokazovanja prenosa....
                     </p>
                 </section>
@@ -351,7 +354,7 @@ OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
                         </TR>
                         <TR >
                             <td  >Naslednja AS4 integracija (AS4_I) [EUR/kos]</td>
-                            <td><input id="g2_AS4I" type="number" value="10000" min=0.0000 step="10" onchange="dataAS4changed();" /></td>
+                            <td><input id="g2_AS4I" type="number" value="20000" min=0.0000 step="10" onchange="dataAS4changed();" /></td>
                         </TR>
                         <TR >
                             <td  class="evip-table-alternateRow">Nova storitev (S) [EUR/kos]</td>
@@ -505,7 +508,8 @@ OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
 
 
             <div class="step slide" data-x="-2000" data-y="-400">
-                <header>Testno okolje</header>
+                <header>Povabilo k testiranju</header>
+                <b>Testno okolje</b>
                 <img src="images/testiranje.svg" alt="Testiranje"  width="800" height="600"/>
             </div>
             
@@ -532,8 +536,8 @@ OKOLJA ZA ELEKTRONSKO IZMENJAVO PISANJ MED SODIŠČI IN BANKAMI</div>
                         </li>
                         <li>Izdelava XSLT tranformacije<ul>
                             <li>Test pravil na konkretnih primerih in dopolnitev pravil</li>
-                            <li>Priprava mejnih testnih primerov in testnih primerov 
-                            za testiranje integracije</li>
+                            <li>Priprava standardnih in mejnih testnih primerov 
+                            za testiranje transformacije in integracije</li>
                            
                         </ul>
                         </li>
