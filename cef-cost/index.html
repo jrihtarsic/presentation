@@ -181,7 +181,112 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
                 </section>                
             </div>
-            <div class="step slide" data-x="1000" data-y="-2000">
+            
+            
+              <div class="step slide" data-x="1000" data-y="-2000">
+                <header>Digitalization of paper mail</header>
+                <section class="left-section" >
+                    Enter average daily paper mail count (N): <br />
+                    <input id="g3_N" type="number" value="2500" min=0 step=1   onchange="datachangedDigit();"/><br />
+                    Enter average paper count in mail (L): <br />
+                    <input id="g3_L" type="number" value="4" min=0 step=1   onchange="datachangedDigit();"/><br />
+                    <p style="font-size: 16px">
+
+                        cost =  sort  + 2 * L * (sa + d + sh) <br/>
+                        yearCost = 200 (dni)* N * cost 
+                    <p>
+                        Paper digitalization cost table
+                    <TABLE class ="evip-table" >
+
+                        <TR class ="evip-table-header">
+
+                            <td>Cost source</td>
+                            <td width="60px">Cost</td>
+                        </TR>
+
+                        <TR >
+
+                            <td>Hand sorting of paper mail (sort) [EUR/mail] </td>
+                            <td width="60px"><input id="g3_srt" type="number" value="0.0000" min=0.0000 step="0.0001" 
+                                                    onchange="datachangedDigit();"  style="width: 60px"></td>
+                        </TR>
+
+                        <TR class="evip-table-alternateRow">                            
+
+                            <td>Scanner amortization (sa) [EUR/page]</td>
+                            <td><input id="g3_sa" type="number" value="0.0000"  min=0.0000 step="0.0001"  
+                                       onchange="datachangedDigit();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >                                                        
+                            <td>Digitalization/validation (d) [EUR/page]</td>
+                            <td><input id="g3_d" type="number" value="0.100"  min=0.0000 step="0.0001"  
+                                       onchange="datachangedDigit();"  style="width: 60px"> </td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td>Human work (sh) [EUR/mail.]</td>
+                            <td><input id="g3_sh" type="number" value="0.000"  min=0.0000 step="0.0001" 
+                                       onchange="datachangedDigit();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >                            
+                            <td > <b>Cost for one mail [EUR]</b> </td>                            
+                            <td><input  id="g3_cost"  value="" style="width: 60px" /></td>
+                        </TR>
+                    </table>
+
+                </section>
+                <section class="right-section" >
+                    Digitalization cost of paper mail<br /><br />
+
+                    <div id="g3_y_unit" style="font-size: 10pt">[EUR]</div>
+                    <div class="ct-chart ct-perfect-fourth"  id="chart3"></div>
+                    <div id="g3_x_unit" style="font-size: 10pt; width: 100%; position: relative; top: -40px" align="right">year</div>
+                    <script>
+                        function datachangedDigit() {
+                            var g3_N = Number(document.getElementById("g3_N").value);
+                            var g3_L = Number(document.getElementById("g3_L").value);
+                            var g3_srt = Number(document.getElementById("g3_srt").value);
+                            var g3_sa = Number(document.getElementById("g3_sa").value);
+                            var g3_d = Number(document.getElementById("g3_d").value);
+                            var g3_sh = Number(document.getElementById("g3_sh").value);
+                            var g3_cost = Number(document.getElementById("g3_cost").value);
+
+                            var cst = g3_srt + 2 * g3_L * (g3_sa + g3_d + g3_sh);
+
+
+                            document.getElementById("g3_cost").value = cst;
+
+                            var cstPerYear = cst * 200 * g3_N;
+                            var unt = "[EUR]";
+                            if (cstPerYear >= 1000000) {
+                                cstPerYear = cstPerYear / 1000000;
+                                unt = "mio [EUR]";
+                            } else if (cstPerYear >= 1000) {
+                                cstPerYear = cstPerYear / 1000;
+                                unt = "* 1000 [EUR]";
+                            }
+                            var data = {
+                                // A labels array that can contain any sort of values
+                                labels: ['0', '1y', '2y', '3y', '4y', '5y'],
+                                // Our series array that contains series objects or in this case series data arrays
+                                series: [
+                                    [0, cstPerYear, cstPerYear * 2, cstPerYear * 3, cstPerYear * 4, cstPerYear * 5]
+                                ]
+                            };
+                            new Chartist.Line("#chart3", data);
+                            document.getElementById("g3_y_unit").innerHTML = unt;
+                        }
+
+                        datachangedDigit();
+                    </script>
+
+                </section>                
+            </div>
+            
+            
+            
+            
+            
+            <div class="step slide" data-x="-1000" data-y="-1200">
                 <header>Reusable AS4 protocol </header>
                 <section>
                     <ul>
@@ -200,7 +305,7 @@ Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github
 
             </div>
 
-            <div class="step slide" data-x="2000" data-y="-2000">
+            <div class="step slide" data-x="0" data-y="-1200">
                 <header>Reusable AS4 protocol </header>
                 <section class="left-section" >
                     Enter new partners per year (P): <input id="g2_P" type="number" value="1" min=0 step=1   onchange="dataAS4changed();"/>
