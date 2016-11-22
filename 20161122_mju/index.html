@@ -1,0 +1,575 @@
+<!doctype html>
+
+<!--
+Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github.com/impress/impress.js)
+    
+-->
+
+<html lang="sl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>MJU 22. 11. 2016</title>
+
+        <meta name="description" content="EVIP predstavitev" />
+        <meta name="author" content="Joze Rihtarsic" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/evip.css" rel="stylesheet" />
+        <link href="css/chartist.min.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <script src="js/chartist.min.js"></script>
+
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-74766368-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body class="impress-not-supported">
+
+
+        <div class="fallback-message">
+            <p>Your browser  <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+
+        <div id="impress">
+            <!-- PROSOJNICA: PRVA STRAN -->
+            <div  class="step slide" data-x="-2000" data-y="-2000" style="vertical-align: central">
+                <img style='top: -20px; left:350px;position: relative' src="images/cif-logo.png" alt="CifLogo"  width="121" height="175"/>
+                <div class="fistPageTitle" style='top:-50px;left:20px;position: relative'>
+                    <div  style='font-size:35px;line-height:35px;color: black;top:90px;left:150px;width: 600px; position: relative;'>
+                        <center>Elektronska izmenjava dokumentov<br />(eVročanje - eVlaganje)</center></div>
+                </div>
+                <div style="font-size:30px;line-height:30px;top:-130px;left:0;position: relative" >
+                    <center>
+                    Ministrstvo za javno upravo<br  /> 
+                    Vrhovno sodišče Republike Slovenije</center>
+                </div>
+                
+                <div style="font-size:20px;line-height:30px;top:0px;left:500px;position: relative" >
+                    Jože Rihtaršič, 22. 11. 2016 
+                </div>
+
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="-2000">
+                <header>Potek predstavitve</header>
+                <section  >
+                    Kazalo:
+                    <ul>
+                        <li>Kalkulator stroškov izhodne/dohodne pošte;</li>
+                        <li>aplikacija Laurentius;</li>
+                        <li>primer vročanja ZUP: Prekrški - Upravne enote</li>
+                        <li>povabilo k testiranju;</li>
+                        <li>kaj je potrebno še narediti.</li>
+
+                    </ul>
+                </section>       
+            </div>
+
+            <div class="step slide" data-x="0" data-y="-2000">
+                <header>Stroški fizične pošte</header>
+                <section class="left-section" >
+                    Povprečna dnevna količina pošiljk(N): <br />
+                    <input id="g1_N" type="number" value="100" min=0 step=1   onchange="datachanged();"/><br />
+                    <p style="font-size: 12px">
+                        Povprečna pošiljka: 4 - listi (8 strani), 1 - kuverta,  1 - povratnica <br/>
+                        strošek = (4* l + 9 * c + E + PS + 2 * (sa + d) + sh )<br/>
+                        LetniStrošek = 200 (dni)* N * strošek 
+                    <p>
+                        Kalkurator stroškov pošiljanja papirne pošte
+                    <TABLE class ="evip-table" >
+
+                        <TR class ="evip-table-header">
+                            <td>Opravilo</td>
+                            <td>Tip stroška</td>
+                            <td width="60px">Strošek</td>
+                        </TR>
+
+                        <TR >
+                            <td rowspan="4">Tiskanje in kuvertiranje</td>
+                            <td>List (l) [EUR/list] </td>
+                            <td width="60px"><input id="g1_p" type="number" value="0.0080" min=0.0000 step="0.0001" onchange="datachanged();"  style="width: 60px"></td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td>Amortizacija tiskalnika (pa) [EUR/stran] </td>
+                            <td width="60px"><input type="number" value="0.0000"  min=0.0000 step="0.0001"  onchange="datachanged();" style="width: 60px"></td>
+                        </TR>
+                        <TR >                            
+                            <td>Kartuša (c) [EUR/stran] </td>
+                            <td width="60px"><input id="g1_c" type="number" value="0.0047"  min=0.0000 step="0.0001"  onchange="datachanged();"  style="width: 60px"></td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td>Kuverta (E) [EUR/kos.]</td>                            
+                            <td width="60px"><input id="g1_E" type="number" value="0.1400"  min=0.0000 step="0.0001"  onchange="datachanged();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >
+                            <td colspan="2">Poštna storitev (PS) [EUR/kos.]</td>
+                            <td><input id="g1_PS" type="number" value="2.05"  min=0.0000 step="0.0001"  onchange="datachanged();"  style="width: 60px"></td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td rowspan="3">Digitalizacija povratnice</td>
+                            <td>Amortizacija skenerja (sa) [EUR/stran]</td>
+                            <td><input id="g1_sa" type="number" value="0.0000"  min=0.0000 step="0.0001"  onchange="datachanged();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >                                                        
+                            <td>Digitalizacija (d) [EUR/stran</td>
+                            <td><input id="g1_d" type="number" value="0.1708"  min=0.0000 step="0.0001"  onchange="datachanged();"  style="width: 60px"> </td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td>Človeško delo (sh) [EUR/kos.]</td>
+                            <td><input id="g1_sh" type="number" value="0.000"  min=0.0000 step="0.0001"  onchange="datachanged();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >                            
+                            <td colspan="2"> <b>Strošek ene pošiljke (strošek) [EUR]</b> </td>                            
+                            <td><input  id="g1_cost"  value="" style="width: 60px" /></td>
+                        </TR>
+                    </table>
+
+                </section>
+                <section class="right-section" >
+                    Strošek papirne pošte na leto<br /><br />
+
+                    <div id="g1_y_unit" style="font-size: 10pt">[EUR]</div>
+                    <div class="ct-chart ct-perfect-fourth"  id="chart1"></div>
+                    <div id="g1_x_unit" style="font-size: 10pt; width: 100%; position: relative; top: -40px" align="right">year</div>
+                    <script>
+                        function datachanged() {
+                            var g1_N = Number(document.getElementById("g1_N").value);
+                            var g1_p = Number(document.getElementById("g1_p").value);
+                            var g1_c = Number(document.getElementById("g1_c").value);
+                            var g1_E = Number(document.getElementById("g1_E").value);
+                            var g1_PS = Number(document.getElementById("g1_PS").value);
+                            var g1_sa = Number(document.getElementById("g1_sa").value);
+                            var g1_d = Number(document.getElementById("g1_d").value);
+                            var g1_sh = Number(document.getElementById("g1_sh").value);
+
+                            var cst = (4 * g1_p + 9 * g1_c + g1_E + g1_PS + 2 * (g1_sa + g1_d) + g1_sh);
+                            document.getElementById("g1_cost").value = cst;
+
+                            var cstPerYear = cst * 200 * g1_N;
+                            var unt = "[EUR]";
+                            if (cstPerYear >= 1000000) {
+                                cstPerYear = cstPerYear / 1000000;
+                                unt = "mio [EUR]";
+                            } else if (cstPerYear >= 1000) {
+                                cstPerYear = cstPerYear / 1000;
+                                unt = "* 1000 [EUR]";
+                            }
+                            var data = {
+                                // A labels array that can contain any sort of values
+                                labels: ['0', '1y', '2y', '3y', '4y', '5y'],
+                                // Our series array that contains series objects or in this case series data arrays
+                                series: [
+                                    [0, cstPerYear, cstPerYear * 2, cstPerYear * 3, cstPerYear * 4, cstPerYear * 5]
+                                ]
+                            };
+                            new Chartist.Line("#chart1", data);
+                            document.getElementById("g1_y_unit").innerHTML = unt;
+                        }
+
+                        datachanged();
+                    </script>
+
+                </section>                
+            </div>
+
+
+            <div class="step slide" data-x="1000" data-y="-2000">
+                <header>Digitalizacija fizične  pošte</header>
+                <section class="left-section" >
+                    Povprečna dnevna količina pošiljk (N): <br />
+                    <input id="g3_N" type="number" value="100" min=0 step=1   onchange="datachangedDigit();"/><br />
+                    Povprečno število listov v pošiljki (L): <br />
+                    <input id="g3_L" type="number" value="4" min=0 step=1   onchange="datachangedDigit();"/><br />
+                    <p style="font-size: 16px">
+
+                        strošek =  sort  + 2 * L * (sa + d + sh) <br/>
+                        LetniStrošek = 200 (dni)* N * strošek 
+                    <p>
+                        Kalkurator stroškov digitalizacije papirne pošte
+                    <TABLE class ="evip-table" >
+
+                        <TR class ="evip-table-header">
+
+                            <td>Tip stroška</td>
+                            <td width="60px">Strošek</td>
+                        </TR>
+
+                        <TR >
+
+                            <td>Sortiranje dohodne pošte (sort) [EUR/pošiljko] </td>
+                            <td width="60px"><input id="g3_srt" type="number" value="0.0000" min=0.0000 step="0.0001" 
+                                                    onchange="datachangedDigit();"  style="width: 60px"></td>
+                        </TR>
+
+                        <TR class="evip-table-alternateRow">                            
+
+                            <td>Amortizacija skenerja (sa) [EUR/stran]</td>
+                            <td><input id="g3_sa" type="number" value="0.0000"  min=0.0000 step="0.0001"  
+                                       onchange="datachangedDigit();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >                                                        
+                            <td>Digitalizacija (d) [EUR/stran</td>
+                            <td><input id="g3_d" type="number" value="0.100"  min=0.0000 step="0.0001"  
+                                       onchange="datachangedDigit();"  style="width: 60px"> </td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td>Človeško delo (sh) [EUR/kos.]</td>
+                            <td><input id="g3_sh" type="number" value="0.000"  min=0.0000 step="0.0001" 
+                                       onchange="datachangedDigit();"  style="width: 60px"></td>
+                        </TR>
+                        <TR >                            
+                            <td > <b>Strošek ene pošiljke [EUR]</b> </td>                            
+                            <td><input  id="g3_cost"  value="" style="width: 60px" /></td>
+                        </TR>
+                    </table>
+
+                </section>
+                <section class="right-section" >
+                    Strošek digitalizacije papirne pošte na leto<br /><br />
+
+                    <div id="g3_y_unit" style="font-size: 10pt">[EUR]</div>
+                    <div class="ct-chart ct-perfect-fourth"  id="chart3"></div>
+                    <div id="g3_x_unit" style="font-size: 10pt; width: 100%; position: relative; top: -40px" align="right">year</div>
+                    <script>
+                        function datachangedDigit() {
+                            var g3_N = Number(document.getElementById("g3_N").value);
+                            var g3_L = Number(document.getElementById("g3_L").value);
+                            var g3_srt = Number(document.getElementById("g3_srt").value);
+                            var g3_sa = Number(document.getElementById("g3_sa").value);
+                            var g3_d = Number(document.getElementById("g3_d").value);
+                            var g3_sh = Number(document.getElementById("g3_sh").value);
+                            var g3_cost = Number(document.getElementById("g3_cost").value);
+
+                            var cst = g3_srt + 2 * g3_L * (g3_sa + g3_d + g3_sh);
+
+
+                            document.getElementById("g3_cost").value = cst;
+
+                            var cstPerYear = cst * 200 * g3_N;
+                            var unt = "[EUR]";
+                            if (cstPerYear >= 1000000) {
+                                cstPerYear = cstPerYear / 1000000;
+                                unt = "mio [EUR]";
+                            } else if (cstPerYear >= 1000) {
+                                cstPerYear = cstPerYear / 1000;
+                                unt = "* 1000 [EUR]";
+                            }
+                            var data = {
+                                // A labels array that can contain any sort of values
+                                labels: ['0', '1y', '2y', '3y', '4y', '5y'],
+                                // Our series array that contains series objects or in this case series data arrays
+                                series: [
+                                    [0, cstPerYear, cstPerYear * 2, cstPerYear * 3, cstPerYear * 4, cstPerYear * 5]
+                                ]
+                            };
+                            new Chartist.Line("#chart3", data);
+                            document.getElementById("g3_y_unit").innerHTML = unt;
+                        }
+
+                        datachangedDigit();
+                    </script>
+
+                </section>                
+            </div>
+
+
+            <div class="step slide" data-x="2000" data-y="-2000">
+                <header>Ponovna uporaba komponent ebMS 3.0</header>
+                <section >
+                    <ul style="font-size: 16pt ">
+                        <li>Ponovna uporabnost komponent za varnost, zanesljivost, naslavljanje, itd.</li>
+                        <li>Predvideva poslovne transakcije</li>
+                        <li>Nadzora in vzdrževanje sistema na enem mestu za vse stranke/storitve</li>
+                    </ul>
+                </section>
+                <section>
+                    <center><img src="images/purpose.svg" alt="Purpose"  height="350"/></center>
+                    <p style="font-size: 16pt ">Prehod iz okolja namenski protokolov v poenotenje protokola za zagotavljanje
+                        varnosti, zanesljivosti, naslavljanja, dokazovanja prenosa....
+                    </p>
+                </section>
+            </div>
+            
+                <div class="step slide" data-x="2000" data-y="-2800">
+                <header>Predlog arhitekture</header>
+                <img src="images/predlog.svg" alt="Gradniki" width="800" height="600" />
+            </div>
+             <div class="step slide" data-x="3000" data-y="-2800">
+                <header>Predlog arhitekture</header>
+                <img src="images/predlog-mju.svg" alt="Gradniki" width="800" height="600" />
+            </div>
+            
+
+            <div class="step slide" data-x="3000" data-y="-2000">
+                <header>Ponovna uporabnost ebMS 3.0 (AS4)</header>
+                <section class="left-section" >
+                    Število novih integracij na leto (P): <input id="g2_P" type="number" value="1" min=0 step=1   onchange="dataAS4changed();"/>
+                    <br />
+                    Število novih storitev na leto (S): <input id="g2_S" type="number" value="2" min=0 step=1   onchange="dataAS4changed();"/>
+                    <br />
+
+
+                    <p style="font-size: 14px">
+                        <b>Protokoli po meri:</b><br />
+                        Prvo leto = P * I + S * Srv + P * mtc <br />
+                        N-to leto  = N * FirstYear;<br />
+                        <b>ebMS 3.0 (AS4) protokol</b><br />
+                        Prvo leto = I + Srv + mtc + (P - 1) * AS4I + (S - 1) * AS4Srv;<br />
+                        N-to leto = FirstYear +  (P * AS4I + S * AS4Srv) (N-1)
+                    <p>
+                    <TABLE class ="evip-table" >
+
+                        <TR class ="evip-table-header">
+                            <td>Vir stroška</td>
+                            <td>Strošek</td>
+                        </TR>
+
+                        <TR >
+                            <td  class="evip-table-alternateRow"> Integracija (I) [EUR/kos]</td>
+                            <td><input id="g2_I" type="number" value="40000" min=0.0000 step="10" onchange="dataAS4changed();"/></td>
+                        </TR>
+                        <TR >
+                            <td  >Naslednja AS4 integracija (AS4_I) [EUR/kos]</td>
+                            <td><input id="g2_AS4I" type="number" value="20000" min=0.0000 step="10" onchange="dataAS4changed();" /></td>
+                        </TR>
+                        <TR >
+                            <td  class="evip-table-alternateRow">Nova storitev (S) [EUR/kos]</td>
+                            <td><input id="g2_Srv" type="number" value="20000" min=0.0000 step="10" onchange="dataAS4changed();" /></td>
+                        </TR>
+                        <TR >
+                            <td >Naslednja AS4 storitev (AS4_S)</td>
+                            <td><input id="g2_AS4Srv" type="number" value="10000" min=0.0000 step="10" onchange="dataAS4changed();" /></td>
+                        </TR>
+                        <TR class="evip-table-alternateRow">                            
+                            <td>Vzdrževanje (mtc) [EUR/leto]</td>
+                            <td><input id="g2_mtc" type="number" value="2000"  min=0.0000 step="10"  onchange="dataAS4changed();" /></td>
+                        </TR>
+                    </table>
+                </section>
+                <section class="right-section" >
+                    <span style="color: blue">--</span> Protokol po meri<br />
+                    <span style="color: red; ">--</span> ebMS 3.0 (AS4) protokol<br />
+
+                    <div id="g2_y_unit" style="font-size: 10pt">[EUR]</div>
+                    <div class="ct-chart ct-perfect-fourth" id="chart2"></div>
+                    <div id="g2_x_unit" style="font-size: 10pt; width: 100%; position: relative; top: -40px" align="right">year</div>
+                    <script>
+                        function dataAS4changed() {
+                            var g2_I = Number(document.getElementById("g2_I").value);
+                            var g2_AS4I = Number(document.getElementById("g2_AS4I").value);
+                            var g2_Srv = Number(document.getElementById("g2_Srv").value);
+                            var g2_AS4Srv = Number(document.getElementById("g2_AS4Srv").value);
+                            var g2_mtc = Number(document.getElementById("g2_mtc").value);
+                            var g2_P = Number(document.getElementById("g2_P").value);
+                            var g2_S = Number(document.getElementById("g2_S").value);
+
+                            var y1Cst = g2_P * g2_I + g2_S * g2_Srv + g2_P * g2_mtc;
+                            var y1As4 = g2_I + g2_Srv + g2_mtc + (g2_P - 1) * g2_AS4I + (g2_S - 1) * g2_AS4Srv;
+                            var y2As4 = g2_P * g2_AS4I + g2_S * g2_AS4Srv;
+
+                            var unt = "[EUR]";
+                            if (y1Cst >= 1000000) {
+                                y1Cst = y1Cst / 1000000;
+                                y1As4 = y1As4 / 1000000;
+                                y2As4 = y2As4 / 1000000;
+
+                                unt = "mio [EUR]";
+                            } else if (y1Cst >= 1000) {
+                                y1Cst = y1Cst / 1000;
+                                y1As4 = y1As4 / 1000;
+                                y2As4 = y2As4 / 1000;
+                                unt = "* 1000 [EUR]";
+                            }
+
+
+                            var data1 = {
+                                // A labels array that can contain any sort of values
+                                labels: ['0', '1y', '2y', '3y', '4y', '5y'],
+                                // Our series array that contains series objects or in this case series data arrays
+                                series: [
+                                    {
+                                        className: 'costsGraph1',
+                                        name: 'customStandard',
+                                        data: [0, y1Cst, y1Cst * 2, y1Cst * 3, y1Cst * 4, y1Cst * 5],
+                                    }, {
+                                        className: 'costsGraph2',
+                                        name: 'AS4 standard',
+                                        data: [0, y1As4, y1As4 + y2As4, y1As4 + y2As4 * 2, y1As4 + y2As4 * 3, y1As4 + y2As4 * 4]
+                                    }
+                                ],
+
+                            };
+                            new Chartist.Line('#chart2', data1);
+                            document.getElementById("g2_y_unit").innerHTML = unt;
+                        }
+
+                        dataAS4changed();
+                    </script>
+
+                </section>                
+            </div>
+
+
+
+
+           
+
+            <div class="step slide" data-x="-1000" data-y="-1200">
+                <header>Kaj je  aplikacije Laurentius</header>
+
+                <section>
+                    <ul>
+                        <li>Implementacija ebMS 3.0 (AS4) standarda;</li>
+                        <li>Sistem za pregled izhodne in dohodne pošte;</li>
+                        <li>Določanje nastavitev za povezovanje s partnerji;</li>
+                        <li>Določanje in avtomatizacija poslovnih transakciji (ZPP dodatek);</li>
+                        <li>JEE aplikacija, ki omogoča prilagajanje okolju uporabnika.</li>
+                    </ul>
+                    <br />
+                    <a href="https://b2g-test.sodisce.si/laurentius-web/"> Vstop v aplikacijo </a>
+                    <img src="images/logical-model.png" alt="Laurentius"  width="800"/>
+
+                </section>
+            </div>
+
+           <div class="step slide" data-x="0" data-y="-1200">
+                <header>Testno okolje</header>
+                <b>Testno okolje</b>
+                <img src="images/testiranje.svg" alt="Testiranje"  width="800" height="600"/>
+            </div>
+            
+            <div class="step slide" data-x="1000" data-y="-1200">
+                <header>eCEV - Laurentius</header>
+                
+                <section>
+                    <ul style="font-size:30px; line-height:30px">
+                        <li>Na strani eCEV se namesti laurentius</li>
+                        <li>Izdelava dodatka, ki preoblikuje sporočilo ebMS 3.0 v SVEV 1.0</li>
+                        <li>Določitev ZUP koreografije in oblike obvestil</li>
+                        <li>Testni primer: Prekrški - upravne enote</li>
+                    </ul>
+                   
+                </section>
+            </div>
+
+
+
+            <div id="overview" class="step end-remark" data-x="1500" data-y="-1000" data-scale="5">
+                <div class ="end-remark" >
+                    Hvala za pozornost
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!--
+            
+            Hint is not related to impress.js in any way.
+            
+            But it can show you how to use impress.js features in creative way.
+            
+            When the presentation step is shown (selected) its element gets the class of "active" and the body element
+            gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+            so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+            the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+            
+            This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+            the first step of presentation is visible for a couple of seconds.
+            
+            ...
+            
+            And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+            It's just a quick and dirty workaround to get different hint text for touch devices.
+            In a real world it should be at least placed in separate JS file ... and the touch content should be
+            probably just hidden somewhere in HTML - not hard-coded in the script.
+            
+            Just sayin' ;)
+            
+        -->
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div> 
+        <div class="navigation-bar" align="center">
+            <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'sl', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <a href="#/step-1" title="Vrhovno sodišče RS"><img src="images/nv_first.png" alt="" height="20"  width="40" /></a> 
+            <a onclick="impress().prev()" title="Nazaj"><img src="images/nv_back.png" alt="" height="20" width="40" /></a> 
+            <a onclick="impress().next()" title="Naprej"><img src="images/nv_next.png" alt="" height="20" width="40" /></a> 
+            <a href="#/overview" title="Overview"><img src="images/nv_last.png" alt="" height="20" width="40" /></a>
+        </div>     
+        <script>
+            if ("ontouchstart" in document.documentElement) {
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+        </script>
+
+        <!--
+            
+            Last, but not least.
+            
+            To make all described above really work, you need to include impress.js in the page.
+            I strongly encourage to minify it first.
+            
+            In here I just include full source of the script to make it more readable.
+            
+            You also need to call a `impress().init()` function to initialize impress.js presentation.
+            And you should do it in the end of your document. Not only because it's a good practice, but also
+            because it should be done when the whole document is ready.
+            Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+            
+        -->
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+
+        <!--
+            
+            The `impress()` function also gives you access to the API that controls the presentation.
+            
+            Just store the result of the call:
+            
+                var api = impress();
+            
+            and you will get three functions you can call:
+            
+                `api.init()` - initializes the presentation,
+                `api.next()` - moves to next step of the presentation,
+                `api.prev()` - moves to previous step of the presentation,
+                `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                        id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                        but it's optional - if not provided default transition duration for the presentation will be used.
+            
+            You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+            Don't worry, it wont initialize the presentation again.
+            
+            For some example uses of this API check the last part of the source of impress.js where the API
+            is used in event handlers.
+            
+        -->
+
+    </body>
+</html>
+
