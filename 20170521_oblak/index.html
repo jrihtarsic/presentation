@@ -1,0 +1,422 @@
+<!doctype html>
+
+<!--
+Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github.com/impress/impress.js)
+    
+-->
+
+<html lang="sl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Oblačno programiranje 30. 05. 2017</title>
+
+        <meta name="description" content="EVIP predstavitev" />
+        <meta name="author" content="Joze Rihtarsic" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/evip.css" rel="stylesheet" />
+        <link href="css/chartist.min.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <script src="js/chartist.min.js"></script>
+
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-74766368-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body class="impress-not-supported">
+
+
+        <div class="fallback-message">
+            <p>Your browser  <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+
+        <div id="impress">
+            <!-- PROSOJNICA: PRVA STRAN -->
+            <div  class="step slide" data-x="-2000" data-y="-2000" style="vertical-align: central">
+                <img style='top: -20px; left:350px;position: relative' src="images/cif-logo.png" alt="CifLogo"  width="121" height="175"/>
+                <div class="fistPageTitle" style='top:-50px;left:20px;position: relative'>
+                    <div  style='font-size:35px;line-height:35px;color: black;top:90px;left:150px;width: 600px; position: relative;'>
+                        <center>Računalništvo v oblaku</center></div>
+                </div>
+                <div style="font-size:30px;line-height:30px;top:-130px;left:0;position: relative" >
+                    <center>                    
+                        Vrhovno sodišče Republike Slovenije</center>
+                </div>
+
+                <div style="font-size:20px;line-height:30px;top:0px;left:500px;position: relative" >
+                    Jože Rihtaršič, 30. 05. 2017 
+                </div>
+
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="-2000">
+                <header>Potek predstavitve</header>
+                <section  >
+                    Kazalo:
+                    <ul>
+                        <li>Kaj je oblak;</li>
+                        <li>Programiranje za oblak - distribuirani sistemi;</li>                        
+                        <li>Primer "piggimetrics";</li>
+                        <li>Naloge</li>
+
+                    </ul>
+                </section>       
+            </div> 
+
+            <div class="step slide" data-x="0" data-y="-2000" >
+                <header>Kaj je oblak</header>
+
+                <section  class="left-section" >
+
+                    <ul >
+                        <li><b>IaaS (Infrastructure as a Service)</b> nudi predvsem „računalniške vire“  disk, RAM, processorske moči. Uporabnik lahko izbere lasten OS,
+                            ter konfiguracijo navidezne strojne opreme.</li>
+                        <li><b>PaaS (Platform as a Service)</b>omogoča postavitev različnih konfiguracij aplikacij in orodij (primer LAMP – linux, apache mysql, PHP). 
+                            Uporabnik navadno ne nadzira spodaj ležeče infrastrukture (omrežje, datotečni sistem , OS), temveč ima nazor samo nad nameščeno aplikacijo oz. nastavitavmi platoforme.</li>                        
+                        <li><b>SaaS (Software as Service)</b> omogoča izvajanje aplikacij v infrastrukturi oblaka in je navadno dostopna več odjemalcem (Brskalnik, tablica itd.) 
+                            <br />Nekatere najbolj znane SaaS storitve: Google Gmail, Google Documents, Hotmai, Facebook, Twitter, LinkedIn, Oracle Fusion Application Services ... </li>
+                    </ul>
+
+                </section>       
+                <section  class="left-section">
+                    <img src="images/Cloud_computing_layers.png"  alt="Cloud_computing_layers" width="400" />
+                </section>
+            </div>
+
+
+            <div class="step slide" data-x="1000" data-y="-2000">
+                <header>Programiranje za oblak</header>
+
+                <section  style="font-size: 23px;line-height: 22px;">
+                    Developing applications in the cloud is a little like visiting Canada from America. Most everything is the same, but there are small differences that you notice and need to accommodate."
+                    <br />David J. Jilk, Standing Cloud<br /><br />
+                    "Cloud services are only as scalable as the underlying web application. If the web application has inherent programming bottlenecks, moving the application into the cloud will not help."
+                    <br />Jeffrey Huckaby, rackAID<br /><br />
+
+
+                    „The cloud isn't the equivalent of more hardware to throw at the problem.“
+                    <br /><br />
+                    "In the case of Amazon EC2, you'll be charged based on bandwidth, memory, and CPU, so a developer needs to build applications with these factors in mind."
+                    <br />Alpesh Patel, Ektron<br /><br />
+
+
+
+                    "Cloud development by itself isn't any different than traditional development. What it is, however, is less tolerant of poor development practices."
+                    <br />Marc LaFleur, Parlance Corporation<br /><br />
+
+
+                    "To really implement web services in the cloud properly developers have to think 'functionally' not 'object-ly'."
+                    <br />John Pavley, Limewire<br />
+
+
+                </section>       
+            </div>
+
+            <div class="step slide" data-x="2000" data-y="-2000">
+                <header>Microservices</header>
+
+                <section  style="font-size: 23px;line-height: 22px;">
+                    <b>Microservisi</b> so poseben pristop za implementacijo storitveno usmerjene arhitekture (SOA), se uporablja za izgradnjo prilagodljive, 
+                    neodvisno premestljive sisteme programske opreme. Pristop mikroservisov je prva realizacijo SOA in postaja vse bolj 
+                    priljubljena za gradnjo "continuously deployed" sistemov. <br /><br />
+
+                    <ul>
+                        <li>Filozofija mikroservisov:  "Do one thing and do it well".</li>
+                        <li>Servisi so majhni, dobro definirani in izvajajo samo eno funkcijo.</li>
+                        <li>Za razvoj mikrostoritev se mora prilagoditi tudi organizacija kultura, ki mora vključevati avtomatizacijo testiranja in nameščanja
+                            (Scrum, Kanban, (ostale DevOps tehnike)). </li>
+                        <li>Zmanjšuje breme vodenja in omogoča, da lahko različne skupine bolj samostojno razvijajo svoje enote.</li>
+                        <li>Z dobro postavljenim okoljem/arhitekturo omogočajo izdelavo "porazdeljenih sistemov" </li>
+
+                    </ul>
+
+                </section>       
+            </div>
+
+            <div class="step slide" data-x="3000" data-y="-2000">
+                <header>Kritike mikrostoritev</header>
+
+                <section  style="font-size: 23px;line-height: 22px;">
+                    <ul>
+                        <li>Klici med storitvami obremenjujejo mrežni promet in povečujejo čas obdelave podatkov oz. izvajanja procesov</li>
+                        <li>Testiranje in nameščanje je lahko bolj zapleteno zlasti, če se vse izvaja ročno oz. če je postavljena slaba infrastruktura.</li>
+                        <li>Težje spreminjanje namena (faktoriziranje (razcepljanje) ali združevanje servisov ) posameznih storitev.</li>
+                        <li>Preveliko drobljenje servisov povečuje kompleksnost aplikacije. </li>
+                    </ul>
+
+
+                </section>       
+            </div>
+
+            <div class="step slide" data-x="4000" data-y="-2000">
+                <header>Mikrostoritve v akciji</header>
+                Piggy Metrics (proprosta aplikacija za vodenje osebnih financ) uporablja Spring Cloud, Spring Boot in Docker <br />
+
+                <img src ="images/piggimetrics-architecture.png" alt="piggimetrics" width="800"/>
+            </div>
+
+            <div class="step slide" data-x="3910" data-y="-1997"  data-scale="0.05"  >
+                <header >Mikroservis piggimetrics</header>
+                <section>
+                    <img src ="images/account-ms.png" alt="piggimetrics" height="450" width="800"/>
+                </section>
+            </div>
+
+
+            <div class="step slide" data-x="5000" data-y="-2000">
+                <header style='font-size: 24px'>Spring Cloud okolje  </header>
+                <section>
+
+                    Spring Cloud je implementacija "pogostih vzorcev" za izdelavo distribuiranih sistemov. Mikroservisi pa so tipa Spring boot aplikacije.
+
+
+                    <img src ="images/piggimetrics-spring-cloud.png" alt="piggimetrics" height="450" width="800"/>
+                </section>
+
+
+
+
+            </div>
+            <div class="step slide" data-x="5350" data-y="-1890" data-scale="0.03" >
+                <header style='font-size: 24px'>Spring Cloud Config</header>
+                <section >
+
+                    Spring Cloud Config je centralni strežnik za nastavitve.<br /><br />
+                    <section class="left-section">
+                        <ul><li>Distribuirani sistemi -> konfiguracija na enem mestu</li>
+                            <li>Možnost dinamičnega spreminjanja konfiguracije</li>
+                            <li>Spring Cloud Config - uporaba repozitorija git - možnost verzionirnja konfiguracij </li>
+                            <li>Mikroservis konfiguracija - samo naslov do strežnika za konfiguracijo </li>
+                        </ul>
+                    </section>
+                    <section class="right-section">
+                        <img src ="images/cloud-config.png" alt="piggimetrics" width="400"/>
+                    </section>
+                </section>
+            </div>
+
+            <div class="step slide" data-x="5350" data-y="-1790" data-scale="0.03" >
+                <header style='font-size: 24px'>Spring Cloud Security</header>
+                <section >
+                    Ločen avtentikacijski/avtorizacijski strežnik, ki omogoča OAuth2 protokol.<br />
+                    Spring Cloud Security vsebuje priročne anotacije za uporabo OAuth2 žetončkov pri klicu mikroservisov.<br />
+                    <ul>
+                        <li>Avtentikacija mikroservisov</li>
+                        <li>Avtentikacija uporabnikov</li> 
+                    </ul>
+
+
+
+                    <br />
+                    <img src ="images/security.png" alt="piggimetrics" width="800"/>
+                </section>
+
+
+
+            </div>
+            <div class="step" data-x="5000" data-y="-2000">      
+            </div>
+            <div class="step slide" data-x="5020" data-y="-2030" data-scale="0.03" >
+                <header style='font-size: 24px'>API Gateway</header>
+                <section >
+                    V praksi navadno "sodeluje" večje število mikroservisov za generiranje ene spletne strani<br />
+                    Dostop do mikroservisov preko Gateway-ev<br />
+                    <ul>
+                        <li>Usmerjanje poizvedb na prave mikroservise</li>
+                        <li>Lahko uporablja vzorce: Fail-over, Load-balacing, Circuit breaker,...</li> 
+                        <li>Konkretni primer: Netflix Zuul proxy + Spring clound anotacije</li> 
+                    </ul>
+                    <br />
+                    <img src ="images/zuul.png" alt="piggimetrics" width="800"/>
+                </section>
+            </div>
+
+            <div class="step slide" data-x="5020" data-y="-1790" data-scale="0.03" >
+                <header style='font-size: 24px'>Service discovery</header>
+                <section >
+
+                    <ul>
+                        <li>Register mikroservisov</li>
+                        <li>Konkretni primer: Netflix Eureka + Spring clound anotacije</li> 
+                        <li>Eureka je implementacija vzorca: "client-side discovery pattern"</li> 
+                        <li>Mikroservisu s Spring anotacijami "določimo" možnost da se poveže z "Eureka Server". Ob zagonu mikroserver
+                            sporoči metapodatke (host, port, stanje itd.)</li>
+                        <li>Eureka sprejema "heartbeat" sporočila servisov - če daljše obdobje sporočila ne pridejo se servis avtomatsko odstrani iz registra</li> 
+
+
+                    </ul>
+
+                </section>
+            </div>
+            <div class="step" data-x="5000" data-y="-2000">      
+            </div>
+            <div class="step slide" data-x="6000" data-y="-2000">
+                <header style='font-size: 24px'>Distribucija</header>
+                <section>
+                    Avtomatizirana distribucija mikroservisov je nujni pogoj v porazdeljenih sistemih!
+                    <ul>
+                        <li>Sposobnost izgradnje servis kadarkoli</li>
+                        <li>Vsaka izgradnja je lahko končna/produkcijska različica</li>
+                        <li>Možnost enostavnega nadzora/upravljanja namestitev izgrajenih različic</li>
+                    </ul>
+
+                </section>
+            </div>
+
+
+            <div class="step " data-x="6000" data-y="-1900" data-scale="0.5">
+                <section>
+
+                    <ul>
+                        <li>Travis CI - izdela tudi docker image in jo označi z git-hash oznako</li>
+                        <li>V dockerhub-u obstajajo tako vse različice označene git-hash-om (možost rollback deploy)</li>
+                        <li>Možnost enostavnega nadzora/upravljanja namestitev izgrajenih različic:<br>
+                            - avtomatske namestitve (razvojno in testno okolje)<br>
+                            - ročno prožene namestive (šolsko okolje,  produkcija)</li>
+                    </ul>
+                    <img src ="images/deployments.png" alt="piggimetrics" height="450" width="800"/>
+                </section>
+            </div>
+
+            
+               <div class="step slide" data-x="7000" data-y="-2000">
+                   <header>Disribuirani sistemi (Programiranje za oblake)</header>
+                <section>
+                    Kaj mora CIF narediti?<BR />                  
+                    <ul>
+                        <li>Postaviti "ekosistem" za distribuiran sistem (Avtorizacijski strežnik (OAuth2 protokol?), Service discovery, Nadzor, 
+                            distribuirana baza (je oracle primeren?) ...  )</li>
+                        <li>Postaviti "ekosistem" za razvoj distribuiranih sistemov (Avtomatska izgradnja in avtomatsko "disribuirano" nameščanje mikroservisov )</li>
+                        <li>Organizacijske spremembe - <b>prevetritev nalog in odgovornosti</b>: Skrb za sisteme, nadzor, spremenjen način razvoja (devOps - (Scrum)) </li>
+                        <li><b>Izobraževanje produkcije/podpore</b> za postavljanje ključnih sistemov in nadzor nad delovanjem </li>
+                        <li><b>Izobraževanje razvoja in projektnih skupin</b> za vodenje in usmerjanje zunanjih izvajalcev pri implementaciji distribuiranih sistemov </li>
+                        
+                    </ul>
+                    <b>Če ne bomo uspešno posvojili načina razvoja in upravljanja distribuiranih sistemov - bomo dobili zelo kompleksno aplikacijo in 
+                    veliko novih tehnologij</b>
+                    
+                    
+                </section>
+            </div>
+
+            
+
+            <div id="overview" class="step end-remark" data-x="1500" data-y="-1000" data-scale="5">
+                <div class ="end-remark" >
+                    Hvala za pozornost
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!--
+            
+            Hint is not related to impress.js in any way.
+            
+            But it can show you how to use impress.js features in creative way.
+            
+            When the presentation step is shown (selected) its element gets the class of "active" and the body element
+            gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+            so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+            the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+            
+            This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+            the first step of presentation is visible for a couple of seconds.
+            
+            ...
+            
+            And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+            It's just a quick and dirty workaround to get different hint text for touch devices.
+            In a real world it should be at least placed in separate JS file ... and the touch content should be
+            probably just hidden somewhere in HTML - not hard-coded in the script.
+            
+            Just sayin' ;)
+            
+        -->
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div> 
+        <div class="navigation-bar" align="center">
+            <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'sl', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <a href="#/step-1" title="Vrhovno sodišče RS"><img src="images/nv_first.png" alt="" height="20"  width="40" /></a> 
+            <a onclick="impress().prev()" title="Nazaj"><img src="images/nv_back.png" alt="" height="20" width="40" /></a> 
+            <a onclick="impress().next()" title="Naprej"><img src="images/nv_next.png" alt="" height="20" width="40" /></a> 
+            <a href="#/overview" title="Overview"><img src="images/nv_last.png" alt="" height="20" width="40" /></a>
+        </div>     
+        <script>
+            if ("ontouchstart" in document.documentElement) {
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+        </script>
+
+        <!--
+            
+            Last, but not least.
+            
+            To make all described above really work, you need to include impress.js in the page.
+            I strongly encourage to minify it first.
+            
+            In here I just include full source of the script to make it more readable.
+            
+            You also need to call a `impress().init()` function to initialize impress.js presentation.
+            And you should do it in the end of your document. Not only because it's a good practice, but also
+            because it should be done when the whole document is ready.
+            Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+            
+        -->
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+
+        <!--
+            
+            The `impress()` function also gives you access to the API that controls the presentation.
+            
+            Just store the result of the call:
+            
+                var api = impress();
+            
+            and you will get three functions you can call:
+            
+                `api.init()` - initializes the presentation,
+                `api.next()` - moves to next step of the presentation,
+                `api.prev()` - moves to previous step of the presentation,
+                `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                        id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                        but it's optional - if not provided default transition duration for the presentation will be used.
+            
+            You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+            Don't worry, it wont initialize the presentation again.
+            
+            For some example uses of this API check the last part of the source of impress.js where the API
+            is used in event handlers.
+            
+        -->
+
+    </body>
+</html>
+
