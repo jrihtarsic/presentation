@@ -1,0 +1,39 @@
+1. Prosojnica.
+Najprej vsi lepo pozdravljeni in hvala prof. dr. Dežmanu  .... za povabilo. 
+. Sem Jože Rihtaršič zaposlen na Centru za informatiko pri Vrhovnem sodišču
+
+kljub temu, da sem zapolsen na sodišču 
+nisem pravnik ali kakšne sorodne smeri. Dokončal sem univerziteno smer na fakulteti za matematiko in fiziko, ter še nadaljeval 
+študij magistrski študij iz poslovno informacijskih ved na fakulteti za ekonomijo. 
+
+v sledeči prezentaciji vam bi rad predstavil projekt evložišče, katerega namen je 
+zagotavljanje sodiščem informacijska orodja za pregledno in učinkovito odpremo in sprejem sodne pošte. To je sicer delo, 
+ki je na prvi pogled nepomembno pri vodenju sodnih postopkov, vendar pa kot vam bom v sami prezentaciji prikazal, 
+ znatno vpliva na stroške in tudi hitrost reševanja sodnih postokov.
+
+--------------------------
+2. Prosojnica.
+Preden pa si ogledamo način dela s prejeto in dohodno pošto, bi zaradi lažjega razumevanja najprej na hitro z organizacijskega vidika 
+predstavil sodišča.  V sloveniji so sodišča v več kot 40 krajih in imamo 65 različnih sodišč, ki delajo na več kot 90tih lokacijah. Vsako sodišče je samostojon,
+z lastnim predsednikom in direktorjem sodišča ter organizacijsko strukturo. Sodišča, pa so po eni strani lahko precej velika, kot so npr. Okrajno sodišče v Ljubljani in Mariboru, 
+kjer so organizirani oddelki, ki se okvarjajo s posameznimi pravnimo področji, po drugi strani pa imamo majhna sodišča, kot so  OJ Lenart, OJ Škofja loka, Litija, kjer se velikokrat naredi 
+da so posameni zaposleni "delajo vse". In ta organizacijska različnost in geografska razpršenost 
+je po eni strani prav poseben izziv pri izdelavi informacijskih orodjih, ki bi bile v pomoč pri poslovanju sodišč.
+
+Mogoče še kot zanimivost na sodiščuje bilo konec prejšnjega leta cca 4100 zaposlenih od tega 913 sodnikov. Glede na preteklo leto je bilo tako zaposlenih 27 sodnikov manj in 66 sodnega osebja. 
+Ta manjko kadra pa smo uspešno nadomestili z organizacijskimi spremembami in uporabo modernih informacijskih tehnologij v poslovanju sodišč.
+
+
+--------------------------
+3. Prosojnica.
+Zakaj je ravnanje s prejeto in izhodno pošto pomemben dejavnih pri vodenju postopkov. Sodišče na leto prejme okoli 1mio zadev. Pri tem prejmemo več mio dohodnih pošiljk in več kot 6 mio izhodnih pošiljk. 
+Če bi en človek, ki bi za kuvertiranje porabil npr 30s bi,da bi skuvertiral takšno količino pošiljk bi potreboval okoli  30 let in če pogledamo koliko je letni strošek samo za poštnino in kurirske storitve na leto sodišča porabijo več kot 10 mio. EUR. Torej zelo veliko fizičnega dela  in velik strošek, se pravi nekaj kar se splača preveriti, če se mogoče da z modernimi informacijskimi tehnologijami delati drugače. Zato so na Vrhovnem sodišču na Centru za informatiko tudi organizirali projektno skupino, kjer smo se okvarjali s tem problemom.  
+
+
+--------------------------
+4. Prosojnica.
+In
+
+
+
+
