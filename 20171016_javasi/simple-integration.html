@@ -1,0 +1,293 @@
+<html lang="sl">
+
+    <head>
+        <meta charset="utf-8" />
+        <style >
+
+            body{
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 800px;
+
+            }
+
+            .computer {
+                background: transparent url("images/server-local.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 250px;
+                width: 240px;
+                top: 100px;
+                left: 10;
+                text-align:center;                
+                font-size: 25px;
+            }
+             .computer div.title {
+                background: #d5e2ff;
+                position:  relative;
+                border-radius: 20px;
+                border: 2px solid #73ADFF;
+                top: -40px;
+               
+                margin: 2px;
+                padding: 2px;
+                
+            }
+            
+            .line {
+                border:1px solid; 
+                position:absolute;
+                background:black;
+                height: 1px;
+            }
+            
+            .lineImage {
+                font-size:20px; 
+                position:absolute;
+                background: transparent url('images/server-local.svg')  no-repeat scroll left top;
+                background-size: 100% 100%;
+                min-width: 50px; height: 80px;
+                animation-name: showImageAnimation;
+                animation-duration: 2s;
+            }
+            
+            .lineImageText {
+                font-size:12px;
+                background: #d5e2ff; 
+                position:  relative; 
+                border-radius: 3px; 
+                border: 1px solid #73ADFF; 
+                top: -10px;
+                width: 80px;
+            }
+            
+            
+            
+            
+            #simpleIntegration {
+                 background: transparent url("images/integration.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 250px;
+                width: 450px;
+                top: 120px;
+                left: 150px;
+                overflow: hidden;
+            }
+            
+            #simpleIntegrationTwoWay {
+                 background: transparent url("images/integrationTwoWay.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 250px;
+                width: 450px;
+                top: 120px;
+                left: 150px;
+                overflow: hidden;
+            }
+            
+            
+            
+            #simpleIntegrationEnhenced {
+                font-size: 24px;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 250px;
+                width: 350px;
+                top: 170px;
+                left: 250px;
+                overflow: hidden;
+            }
+            
+         
+            
+            
+              @keyframes showImageAnimation {
+                0%   { transform: scale(0.001)}
+                50%   { transform:scale(1.5)}
+                100% {transform: scale(1.0)}
+            }
+
+
+           
+        </style>
+
+        <script type="text/javascript">
+
+            window.addEventListener('message', function (event) {
+
+                if (event.data) {
+                    if (event.data === "restartAnimation") {
+                        restartAnimation();
+                    }
+                     if (event.data === "nextAnimation") {
+                        nextAnimation();
+                    }
+
+
+                }
+            });
+
+            function resetAnimation() {
+               
+
+
+            }
+            function startAnimation() {
+                
+
+
+
+            }
+            var animationIndex = 0;
+            function restartAnimation() {
+                animationIndex = 0;
+                document.getElementById("simpleIntegration").style.visibility="hidden";
+                document.getElementById("simpleIntegrationEnhenced").style.visibility="hidden";
+                document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+
+
+
+            }
+
+            
+            function nextAnimation() {
+                if (animationIndex === 0) {
+                    animationIndex=1;
+                    document.getElementById("partnerComputer").style.visibility="visible";
+                    document.getElementById("simpleIntegration").style.visibility="visible";
+                    document.getElementById("simpleIntegrationEnhenced").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+                } else if (animationIndex === 1) {
+                    animationIndex=2;
+                    document.getElementById("partnerComputer").style.visibility="visible";
+                    document.getElementById("simpleIntegration").style.visibility="visible";
+                    document.getElementById("simpleIntegrationEnhenced").style.visibility="visible";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+                }
+                else if (animationIndex === 2) {
+                    animationIndex=3;
+                    document.getElementById("partnerComputer").style.visibility="visible";
+                    document.getElementById("simpleIntegration").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationEnhenced").style.visibility="visible";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="visible";
+                }
+                 else if (animationIndex === 3) {
+                    animationIndex=4;
+                    document.getElementById("simpleIntegration").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationEnhenced").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+                    document.getElementById("partnerComputer").style.visibility="hidden";
+             
+                    startMultipleAnimation();
+                    
+                }else if (animationIndex === 4) {
+                    animationIndex=1;
+                    document.getElementById("simpleIntegration").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationEnhenced").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+                    document.getElementById("simpleIntegrationTwoWay").style.visibility="hidden";
+                    document.getElementById("partnerComputer").style.visibility="hidden";
+             
+                    startTimeAnimation();
+                    
+                }
+                
+
+            }
+            
+            function startTimeAnimation() {
+                document.getElementsByClassName("")
+                // dopolnjevanje storite
+                // dodajanje novih storitev
+                // spreminjanje/dodajanje partnerjev
+                
+                
+            }
+            
+            
+            function startMultipleAnimation() {
+               var maxPartners = 10;
+
+                var delta =  Math.PI /maxPartners;
+                var rotateOffset = -Math.PI/2.+delta;
+
+                var myComputer = document.getElementById("myComputer");
+              
+
+                var index = 0;
+                var id = setInterval(showNext, 500);
+                var offsetX = 170;
+                var offsetY = 140;
+                var radius = 250;
+
+
+                function showNext() {
+                  if (index >= maxPartners) {
+                        clearInterval(id);
+                    } else {
+                    
+                       var r = radius + (index % 2 == 0 ? -20 : 20)
+                        var line = document.createElement("div");
+                        line.className="line";
+                        myComputer.appendChild(line);
+
+                        line.style.width =(r / 3) + "px";
+                        line.style.top = ( offsetY+30) + "px";
+                        line.style.left =  (offsetX) + "px";
+                        line.style.transform = "rotate(" + ((delta * index + rotateOffset) * 57.3) + "deg) translate(" + (20 + r / 2) + "px, 0px)";
+                        
+
+                        var div = document.createElement("div");
+                        div.className="lineImage";
+                        myComputer.appendChild(div);
+
+                        div.style.left = (r * Math.cos(delta * index+rotateOffset) + offsetX) + "px";
+                        div.style.top = (r * Math.sin(delta * index +rotateOffset) + offsetY) + "px";
+   
+                        
+                        var divText = document.createElement("div");
+                        divText.innerHTML ="Aplikacija:" +index;                        
+                        divText.className="lineImageText"
+                         
+                        div.appendChild(divText);
+                                                
+                        index++;
+                    }
+                }
+            }
+
+
+
+        </script>
+
+    </head>
+    <body onLoad="restartAnimation()">
+        
+        <div id="myComputer"  class="computer" style="top: 100px;left: 10px;"><div class="title" >Poslovni proces 1<br />Aplikacija 1</div></div>
+        <div id="partnerComputer" class="computer" style="top: 100px;left: 560px;"><div class="title">Poslovni proces 2<br />Aplikacija 2</div></div>
+        
+        <div id="simpleIntegration"></div>
+        <div id="simpleIntegrationTwoWay"></div>
+        <div id="simpleIntegrationEnhenced">Varnost: TLS (HTTPS)<br />(avtentikacija klienta) <br /> <br/>Zanesljivost: Id sporočil, <br>statusi sporočil</div>
+        
+         
+        
+        - Problemi:
+         1. Spreminjanje vsebine
+         2. Spreminjanje protokola 
+         3. Prilaganjanje aplikacijami
+
+
+    </body>
+</html>
+
