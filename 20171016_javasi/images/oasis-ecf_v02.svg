@@ -5390,8 +5390,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="110.32855"
-     inkscape:cy="129.88985"
+     inkscape:cx="22.824085"
+     inkscape:cy="129.18274"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -5441,23 +5441,23 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:85.00000238%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="67.735062"
+       x="65.735062"
        y="874.02826"
        id="text11375-4-0"
        sodipodi:linespacing="85.000002%"><tspan
          sodipodi:role="line"
          id="tspan11377-2-3"
-         x="67.735062"
+         x="65.735062"
          y="874.02826"
-         style="font-size:16.25px;line-height:85.00000238%;letter-spacing:-1.11px">Lastna</tspan><tspan
+         style="font-size:16.25px;line-height:85.00000238%;letter-spacing:0px">Lastna</tspan><tspan
          sodipodi:role="line"
-         x="67.735062"
-         y="884.65326"
-         style="font-size:16.25px;line-height:85.00000238%;letter-spacing:-1.11px"
+         x="65.735062"
+         y="887.84076"
+         style="font-size:16.25px;line-height:85.00000238%;letter-spacing:0px"
          id="tspan15775">rešitev</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:85.00000238%;font-family:sans-serif;letter-spacing:-1.11000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:85.00000238%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="68.730026"
        y="912.16199"
        id="text11375-4-0-7"
@@ -5465,13 +5465,13 @@
          sodipodi:role="line"
          x="68.730026"
          y="912.16199"
-         style="font-size:12.5px;line-height:85.00000238%;letter-spacing:-1.11000001px"
+         style="font-size:11.25px;line-height:85.00000238%;letter-spacing:0px"
          id="tspan15775-6"
          dx="0 0 0 0 -0.029999999">Ponudniki</tspan><tspan
          sodipodi:role="line"
          x="68.730026"
          y="922.78699"
-         style="font-size:12.5px;line-height:85.00000238%;letter-spacing:-1.11000001px"
+         style="font-size:11.25px;line-height:85.00000238%;letter-spacing:0px"
          id="tspan15800">storitev</tspan></text>
   </g>
 </svg>

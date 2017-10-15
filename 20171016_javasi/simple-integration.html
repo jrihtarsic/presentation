@@ -20,7 +20,7 @@
                 padding: 0;
                 height: 250px;
                 width: 240px;
-                top: 100px;
+                top: 120px;
                 left: 10;
                 text-align:center;                
                 font-size: 25px;
@@ -34,7 +34,7 @@
                 padding: 0;
                 height: 250px;
                 width: 240px;
-                top: 100px;
+                top: 120px;
                 left: 10;
                 text-align:center;                
                 font-size: 25px;
@@ -55,7 +55,7 @@
                 position:  relative;
                 border-radius: 20px;
                 border: 2px solid #73ADFF;
-                top: -40px;               
+                top: -50px;               
                 margin: 2px;
                 padding: 2px;
 
@@ -122,7 +122,7 @@
                 padding: 0;
                 height: 250px;
                 width: 450px;
-                top: 120px;
+                top: 140px;
                 left: 150px;
                 overflow: hidden;
             }
@@ -135,7 +135,7 @@
                 padding: 0;
                 height: 250px;
                 width: 450px;
-                top: 120px;
+                top: 140px;
                 left: 150px;
                 overflow: hidden;
             }
@@ -149,8 +149,8 @@
                 padding: 0;
                 height: 250px;
                 width: 350px;
-                top: 170px;
-                left: 250px;
+                top: 190px;
+                left: 240px;
                 overflow: hidden;
             }
 
@@ -211,12 +211,12 @@
         <script type="text/javascript">
 
             var textLines = [
-                {left: 520, top: 0, fontSize: 35, name: "1. Spreminjanje poslovnih procesov (nove storitve)"},
-                {left: 520, top: 60, fontSize: 35, name: "2. Nadgrajevanje aplikacij (kvalitetnejše vsebine)"},
-                {left: 520, top: 120, fontSize: 35, name: "3. Spreminjanje vsebine sporočil"},
-                {left: 520, top: 180, fontSize: 35, name: "4. Nove tehnologije"},
-                {left: 520, top: 240, fontSize: 35, name: "5. Menjavanje partnerjev"},        
-                {left: 520, top: 300, fontSize: 35, name: "6. Novi trendi partnerjev"},
+                {left: 520, top: 0, fontSize: 20, name: "1. Spreminjanje poslovnih procesov (nove storitve)"},
+                {left: 520, top: 80, fontSize: 20, name: "2. Nadgrajevanje aplikacij (kvalitetnejše vsebine)"},
+                {left: 520, top: 160, fontSize: 22, name: "3. Spreminjanje vsebine sporočil"},
+                {left: 520, top: 220, fontSize: 22, name: "4. Nove tehnologije"},
+                {left: 520, top: 260, fontSize: 22, name: "5. Menjavanje partnerjev"},        
+                {left: 520, top: 320, fontSize: 22, name: "6. Novi trendi partnerjev"},
                 
             ];
             
@@ -356,6 +356,7 @@
                         p.style.position = "absolute";
                         p.style.left = (textLines[indexText].left - offsetX) + "px";
                         p.style.top = (textLines[indexText].top - offsetY) + "px";
+                        p.style['font-size'] = textLines[indexText].fontSize + "px"
                         indexText++;
                     }
                 }
@@ -376,7 +377,7 @@
                 var index = 0;
                 var id = setInterval(showNext, 500);
                 var offsetX = 170;
-                var offsetY = 140;
+                var offsetY = 120;
                 var radius = 250;
 
 
@@ -424,11 +425,11 @@
     </head>
     <body onLoad="restartAnimation()">
 
-        <div id="myComputer"  class="computer" style="top: 100px;left: 10px;"><div class="title" >Poslovni proces 1<br />Aplikacija 1</div>
+        <div id="myComputer"  class="computer" style="top: 120px;left: 10px;"><div class="title" >Poslovni proces 1<br />Aplikacija 1</div>
             <div id="myComputerConnections" style="overflow: hidden;"></div>
 
         </div>
-        <div id="partnerComputer" class="computer" style="top: 100px;left: 560px;"><div class="title">Poslovni proces 2<br />Aplikacija 2</div></div>
+        <div id="partnerComputer" class="computer" style="top: 120px;left: 560px;"><div class="title">Poslovni proces 2<br />Aplikacija 2</div></div>
 
         <div id="simpleIntegration"></div>
         <div id="simpleIntegrationTwoWay"></div>
