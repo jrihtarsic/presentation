@@ -1,0 +1,483 @@
+<!doctype html>
+
+<!--
+Prezentation was created by many thanks to Bartek Szopka @bartaz (https://github.com/impress/impress.js)
+    
+-->
+
+<html lang="sl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>ZEIDES 26. 10. 2017</title>
+
+        <meta name="description" content="Uporaba standarda OASIS - ebMS 3.0 za elektronsko poslovanje" />
+        <meta name="author" content="Joze Rihtarsic" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/evip.css" rel="stylesheet" />
+
+
+
+
+    </head>
+    <body class="impress-not-supported">
+
+
+        <div class="fallback-message">
+            <p>Your browser  <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+
+        <div id="impress">
+            <!-- PROSOJNICA: PRVA STRAN -->
+            <div  class="step firstSlide" data-x="-2000" data-y="-2000" style="vertical-align: central">
+                
+                <div class="fistPageTitle" style='top:50px;left:20px;position: relative'>
+                    <div style='font-size:40px;line-height:40px;color: black;top:100px;
+                         left:100px;width: 600px; position: relative;text-align:center;'>
+                        Uporaba standarda <br /> OASIS - ebMS 3.0 (ESENS-AS4) za elektronsko poslovanje s sodiščem<br /><br />
+
+                    </div>
+
+                </div>
+     
+
+                <div style="font-size:25px;line-height:30px;top:450px;left:80px;position: absolute" >
+                    mag. Jože Rihtaršič, tehnični vodja (programer) projekta EVIP. 
+                </div>
+
+                <div style="font-size:16px;line-height:30px;position: absolute;bottom:30px;"  >
+                    Prosojnice so izdelane z uporabo CSS3 in HTML5 ter delujejo v novejših verzijah Firefox in Chrome. 
+                    V primeru težav s prikazovanjem uporabite <a href="presentation.pdf" style="color:blue; text-decoration: underline;">PDF prosojnice</a>! 
+                </div>
+
+
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="-2000" data-source="simple-integration.html"
+                 data-step ="0" data-stepcount="4">
+                <header>Povezovanje aplikacij</header>
+
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="-2800" data-source="oasis-ecf.html"
+                 data-step ="0" data-stepcount="4">
+                <header>Cilji elekronskega poslovanje na sodišču</header>
+                <!-- 
+                <center>
+                    <div style=' width:800px;height:600px; background: transparent url("images/predlog.svg") no-repeat scroll left top;background-size: 100% 100%;'></div>
+                </center>
+                -->  
+            </div>
+
+
+
+
+            <div class="step slide" data-x="0" data-y="-2800">
+                <header>Izhodna in dohodna pošta</header>
+                <section  >
+                    <p style="font-size: 90%">Slovenska sodišča imajo na leto v delu cca 1 mio zadev:</p>
+                    <ol >                                                
+                        <li>več kot 2 mio. vlog (dohodna pošta);</li>         
+                        <li>več kot 6 mio. izhodnih pošiljk;</li>
+                        <li>do leta 2013 strošek poštnih storitev cca 12 mio. EUR.</li>
+                        <li>pred 2010 čas odpreme fizične pošte od 0 dni do nekaj mesecev.</li>
+
+                    </ol>     
+                    <center >
+                        <img src="images/stroski-postne-storitve.png" alt="Stroški poštnine" width="700" height="300" />
+                        <p style='font-size: 12px'>Vir: Vrhovno sodišče Republike Slovenije, Letno poročilo o učinkovitosti in uspešnosti sodišč 2016, Ljubljana 2017</p>
+                    </center>           
+                </section>                
+            </div>
+
+
+
+            <div class="step slide" data-x="0" data-y="-2000" data-source="court-process.html"
+                 data-step ="0" data-stepcount="3">
+                <header>Procesi sodišča</header>
+            </div>
+
+            <div class="step step-disapear" data-x="0" data-y="-2000" data-step ="0" data-stepcount="3" data-source="court-units.html" >
+                <header>Procesi sodišča</header>
+
+            </div>
+
+
+            <div class="step slide" data-x="0" data-y="-2500" data-z="400" data-rotate-x="-90"  data-step ="0" data-stepcount="2" data-source="evip.html"  >
+                <header>EVIP izhodna / dohodna pošta</header>
+
+            </div>
+
+            <div class="step slide" data-x="1000" data-y="-3500" data-z="400" data-rotate-x="-90"  >
+                <header>Postopki vročanja/ način odpreme</header>
+                <section>
+                    <center>
+                        <TABLE class ="evip-table" >
+
+                            <TR class ="evip-table-header">
+                                <TD>Postopek vročitve / način odpreme</TD>
+                                <TD align="center" >Lokalna odprema</TD>
+                                <TD align="center" >Strojno kuvertiranje</TD>
+                                <TD align="center" >e-vročanje</TD>
+                            </TR>
+                            <TR>
+                                <TD>Standardno pismo</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓(email)</TD>
+
+                            </TR>
+                            <TR class="evip-table-alternateRow">
+                                <TD>Priporočeno pismo</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >o</TD>
+                                <TD align="center" ><BR></TD>
+
+                            </TR>
+                            <TR>
+                                <TD>Priporočeno pismo - tujina</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >o</TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+                            <TR class="evip-table-alternateRow">
+                                <TD>Priporočeno s povratnico</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR/></TD>
+                                <TD align="center" ><BR/></TD>
+
+                            </TR>
+                            <TR >
+                                <TD>Priporočeno s povratnico - tujina</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+                            <TR class="evip-table-alternateRow">
+                                <TD>Paket</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+                            <TR>
+                                <TD>Paket s povratnico</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+
+                            <TR class="evip-table-alternateRow" style="background:#C9C9FF">
+                                <TD>OBR. SR. 38</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                                <TD align="center" ><br /></TD>
+
+                            </TR>
+                            <TR style="background:#E9E9FF">
+                                <TD>OBR. SR. 39</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                                <TD align="center" ><BR /></TD>
+
+
+
+                            <TR class="evip-table-alternateRow" style="background:#C9C9FF">
+                                <TD>ZPP navadno</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >V pripravi</TD>
+                            </TR>
+                            <TR style="background:#E9E9FF">
+                                <TD>ZPP osebno</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >✓ (SVEV)</TD>
+                            </TR>
+                            <TR class="evip-table-alternateRow" style="background:#C9C9FF">
+                                <TD >ZKP navadno</TD>
+                                <TD align="center">✓</TD>
+                                <TD><BR /></TD>
+                                <TD><BR /></TD>
+                            </TR>
+                            <TR  style="background:#E9E9FF">
+                                <TD >ZKP osebno</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+                            <TR class="evip-table-alternateRow" style="background:#C9C9FF">
+                                <TD >ZSReg</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+                            <TR style="background:#E9E9FF">
+                                <TD>ZFPPIPP</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" ><BR /></TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+                            <TR class="evip-table-alternateRow" style="background:#C9C9FF">
+                                <TD>ZUP</TD>
+                                <TD align="center" >✓</TD>
+                                <TD align="center" >o</TD>
+                                <TD align="center" ><BR /></TD>
+                            </TR>
+
+
+                        </TABLE>
+                    </center>
+                </section>
+
+            </div>
+
+
+            <div class="step slide" data-x="1000" data-y="-2000"  data-source="integrations.html"  data-step ="0" data-stepcount="2">
+                <header>Integracije</header>
+
+
+
+
+            </div>
+
+            <div class="step slide" data-x="1000" data-y="-1500" data-z="300" data-rotate-x="-90"    data-source="ebmsmodel.html" data-step ="0" data-stepcount="6" >
+                <header>Sporočilni model ebMS 3.0</header>
+
+
+            </div>
+
+            <div class="step slide" data-x="1000" data-y="-1000"    data-source="pmode.html" data-step ="0" data-stepcount="7" >
+                <header>PMode parametri</header>
+
+
+            </div>
+
+            <div class="step slide" data-x="0" data-y="-1000">
+                <header>Laurentius</header>
+                <div style='position: absolute; top:100px; right: 40px; width:230px;height:150px; background: transparent url("images/LovrencKosir.jpeg") no-repeat scroll left top;background-size: 100% 100%;'></div>
+
+                <section  >
+                    <ol style="font-size: 22px;line-height:25px"  >                                                
+                        <li style="width: 500px">Implementacija gradnika MSH z namenom spodbujanja 
+                            (in zmanjševanja začetnih stroškov strankam in ponudnikom storitev) pri uporabi protokola ebMS 3.0;</li>
+                        <li style="width: 500px">Skladna rešitev z evropskimi smernicami (eCODEX, eSENS, Skupni digitalni trg). 
+                            Oktober 2016: opravljen test skladnosti: eSENS-AS4;</li>
+                        <li >Nastal v sodelovanju z Združenjem bank Slovenije;
+                            <ul style="font-size: 18px;line-height:18px">
+                        <li>Prenos dobrih praks iz gospodarstva na sodišče;</li>
+                        <li>Programiranja je potekalo na sodišču; testiranje pri članicah ZBS;</li>
+                        <li>Splošno uporabne funkcionalne zahteve: (integracije, nadzor, zanesljivost) članice  ZBS;</li>
+                        </ul>
+                        </li>
+                        <li>Odprta koda z licenco EUPL (varnost zagotavljajo tehnični mehanizmi in ne skrivanje kode);</li>
+                        <li>Splošno uporabni programi, ki se razvijejo na sodišču so na voljo tudi državljanom; </li>
+                        <li>Ime je v spomin Lovrencu Koširju (1804-1879), ki je eden izmed inovatorjev poštne znamke.</li>
+                    </ol>     
+                </section>
+
+
+
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="-1000" >
+                <header>Odprtokodna rešitev</header>
+
+                <center>
+                    <div style=' width:800px;height:600px; background: transparent url("images/build-process.svg") no-repeat scroll left top;background-size: 100% 100%;'></div>
+                </center>
+
+            </div>
+
+
+            <!-- div class="step slide" data-x="-0" data-y="0" >
+                <header style="vertical-align: central">Hvala za pozornost</header>
+                <section>
+                    <ul>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>Laurentius (koda):</b>  https://vsrscif.github.io/Laurentius/</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>Laurentius (dokumentacija):</b> https://vsrscif.github.io/Laurentius/</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>Dockerhub (docker run --net=host -p 8080:8080 -p 9990:9990 -it jrihtarsic/laurentius):</b> https://hub.docker.com/r/jrihtarsic/laurentius/</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>ebMS 3.0:</b>http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/core/cs02/ebms_core-3.0-spec-cs-02.html</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>eSENS-AS4 rešitve:</b>https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/e-SENS+AS4+conformant+solutions</li>
+
+
+                    </ul>
+                </section>
+
+
+            </div -->
+
+            <div id="overview" class="step end-remark" data-x="1500" data-y="-500" data-scale="5">
+                <div class ="end-remark" >
+                        Hvala za pozornost
+                </div>
+                
+                <section class="right-section" style="position: relative; top:120px;font-size: 20px;">
+
+
+                    <ul>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>Laurentius (koda):</b>  https://vsrscif.github.io/Laurentius/</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>Laurentius (dokumentacija):</b> https://vsrscif.github.io/Laurentius/</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>Dockerhub (docker run --net=host -p 8080:8080 -p 9990:9990 -it jrihtarsic/laurentius):</b> https://hub.docker.com/r/jrihtarsic/laurentius/</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>ebMS 3.0:</b>http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/core/cs02/ebms_core-3.0-spec-cs-02.html</li>
+                        <li style="font-size: 20px;padding:0px; margin: 0px"><b>eSENS-AS4 rešitve:</b>https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/e-SENS+AS4+conformant+solutions</li>
+
+
+                    </ul>
+                </section>
+            </div>
+
+
+
+        </div>
+
+        <!--
+            
+            Hint is not related to impress.js in any way.
+            
+            But it can show you how to use impress.js features in creative way.
+            
+            When the presentation step is shown (selected) its element gets the class of "active" and the body element
+            gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+            so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+            the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+            
+            This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+            the first step of presentation is visible for a couple of seconds.
+            
+            ...
+            
+            And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+            It's just a quick and dirty workaround to get different hint text for touch devices.
+            In a real world it should be at least placed in separate JS file ... and the touch content should be
+            probably just hidden somewhere in HTML - not hard-coded in the script.
+            
+            Just sayin' ;)
+            
+        -->
+        <div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div> 
+
+        <div class="navigation-bar" align="center">
+            <div >Use a spacebar or arrow keys to navigate</div>
+            <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'sl', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+            
+            <a href="#/step-1" title="Vrhovno sodišče RS"><img src="images/nv_first.png" alt="" height="20"  width="40" /></a> 
+            <a onclick="impress().prev()" title="Nazaj"><img src="images/nv_back.png" alt="" height="20" width="40" /></a> 
+            <a onclick="impress().next()" title="Naprej"><img src="images/nv_next.png" alt="" height="20" width="40" /></a> 
+            <a href="#/overview" title="Overview"><img src="images/nv_last.png" alt="" height="20" width="40" /></a>
+            
+   
+        </div>     
+        <script>
+            if ("ontouchstart" in document.documentElement) {
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+        </script>
+
+        <!--
+            
+            Last, but not least.
+            
+            To make all described above really work, you need to include impress.js in the page.
+            I strongly encourage to minify it first.
+            
+            In here I just include full source of the script to make it more readable.
+            
+            You also need to call a `impress().init()` function to initialize impress.js presentation.
+            And you should do it in the end of your document. Not only because it's a good practice, but also
+            because it should be done when the whole document is ready.
+            Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+            
+        -->
+        <script src="js/impress.js"></script>
+        <script>
+            impress().init();
+
+            document.addEventListener("impress:stepenter", loadPage, false);
+            document.addEventListener("impress:stepleave", unloadHtml, false);
+
+            document.addEventListener("impress:stepnext", nextPageStep, false);
+
+            function nextPageStep(event) {
+                var step = event.target;
+                var index = step.getAttribute("data-step");
+                var source = step.getAttribute("data-source");
+
+                if (source) {
+                    var iframe = document.getElementById("iframe-" + step.id);
+                    if (iframe) {
+                        iframe.contentWindow.postMessage("nextAnimation", '*');
+                    }
+                }
+            }
+
+
+
+            var playAnimationFunctions = null;
+
+            function loadPage(event) {
+
+
+                var step = event.target;
+
+                var source = step.getAttribute("data-source");
+
+                if (source) {
+
+
+                    var iframe = document.getElementById("iframe-" + step.id);
+                    if (iframe === null) {
+                        var center = document.createElement('center');
+                        center.style = "width:810px;height:610px";
+                        iframe = document.createElement('iframe');
+                        iframe.id = "iframe-" + step.id;
+                        //iframe.style = "width:100%;height:88%";
+                        iframe.style = "width:805px;height:605px;min-width:805px;min-height:605px";
+                        iframe.height = "605px"
+                        iframe.width = "805px"
+                        step.appendChild(center);
+                        center.appendChild(iframe);
+                        iframe.src = source;
+                        iframe.onload = function () {
+                            iframe.contentWindow.postMessage("restartAnimation", '*');
+                        };
+                    } else {
+                        iframe.contentWindow.postMessage("restartAnimation", '*');
+                    }
+
+
+                }
+
+            }
+
+            function unloadHtml(event) {
+                /*
+                 var step = event.target;
+                 var source = step.getAttribute("data-source");
+                 
+                 if (source)  {
+                 var iframe = document.getElementById(step.id+"frame");
+                 if (iframe) {
+                 iframe.src="";
+                 }
+                 }*/
+
+            }
+        </script>    
+
+
+
+
+    </body>
+</html>
+

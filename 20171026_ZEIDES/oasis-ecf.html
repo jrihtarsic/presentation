@@ -1,0 +1,120 @@
+<html lang="sl">
+
+    <head>
+        <meta charset="utf-8" />
+        <style >
+
+            body{
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 800px;
+
+            }
+
+            #oasisECFArchitectureV01 {
+                background: transparent url("images/oasis-ecf_v01.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 800px;
+                top: 0px;
+                right: 0px;
+                text-align:center;                
+            }
+            
+            #oasisECFArchitectureV02 {
+                background: transparent url("images/oasis-ecf_v02.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 800px;
+                top: 0px;
+                right: 0px;
+                text-align:center;                
+            }
+            
+            #oasisECFArchitectureV03 {
+                background: transparent url("images/oasis-ecf_v03.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 800px;
+                top: 0px;
+                right: 0px;
+                text-align:center;                
+            }
+            
+            
+            #oasisECFArchitectureV04 {
+                background: transparent url("images/oasis-ecf_v04.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 800px;
+                top: 0px;
+                right: 0px;
+                text-align:center;                
+            }
+            
+          
+
+
+        </style>
+
+        <script type="text/javascript">
+            var animationIndex = 0;
+            window.addEventListener('message', function (event) {
+
+                if (event.data) {
+                    if (event.data === "restartAnimation") {
+                        animationIndex = 1;
+                        nextImage();
+                    }
+                    if (event.data === "nextAnimation") {
+                        animationIndex++;
+                        if (animationIndex>4){
+                            animationIndex=0;
+                        }
+                        nextImage();
+                    }
+
+
+                }
+            });
+
+            
+        
+                
+          
+
+            function nextImage() {                
+                
+                for (var i=1; i<5; i++)
+                    document.getElementById("oasisECFArchitectureV0"+i).style.visibility 
+                        = animationIndex >=i?"visible":'hidden';                            
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        <div id="oasisECFArchitectureV02"  style="visibility:hidden;"></div>
+        <div id="oasisECFArchitectureV04"  style="visibility:hidden;"></div>
+        <div id="oasisECFArchitectureV01"   style="visibility:visible;"></div>        
+        <div id="oasisECFArchitectureV03"  style="visibility:hidden;"></div>
+        
+
+
+    </body>
+</html>
+
