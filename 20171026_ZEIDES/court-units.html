@@ -170,8 +170,9 @@
                         
                     } else {
                         var p = document.createElement("div");
-                        p.className = "CMS";
                         courtUnits.appendChild(p);
+                        p.className = "CMS";
+                        
                         p.style = "left:" + (infSystems[index].left - offsetX) + "px; top:" + (infSystems[index].top - offsetY)
                                 + "px; background-color: " + infSystems[index].color;
                         p.innerHTML = infSystems[index].name;
@@ -198,8 +199,9 @@
 
                     } else {
                         var p = document.createElement("div");
-                        p.className = "horizontalIS";
+                      
                         courtUnits.appendChild(p);
+                        p.className = "horizontalIS";
                         var item = infHorizontalSystems[infHorizontalSystems.length-1 - index];
                         
                         
