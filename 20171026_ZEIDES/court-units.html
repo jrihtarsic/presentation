@@ -171,12 +171,13 @@
                     } else {
                         var p = document.createElement("div");
                         p.className = "CMS";
+                        courtUnits.appendChild(p);
                         p.style = "left:" + (infSystems[index].left - offsetX) + "px; top:" + (infSystems[index].top - offsetY)
                                 + "px; background-color: " + infSystems[index].color;
                         p.innerHTML = infSystems[index].name;
 
 
-                        courtUnits.appendChild(p);
+                        
                          p.style.animation = "showVerticalAnimation 1.5s forwards";
 
                         index++;
@@ -197,14 +198,17 @@
 
                     } else {
                         var p = document.createElement("div");
-                        var item = infHorizontalSystems[infHorizontalSystems.length-1 - index];
                         p.className = "horizontalIS";
+                        courtUnits.appendChild(p);
+                        var item = infHorizontalSystems[infHorizontalSystems.length-1 - index];
+                        
+                        
                         p.style = "left:0px; top:" + (600 - iHeight - iHeight * index)
                                 + "px; background-color: " + item.color;
                         p.innerHTML =item.name;
 
 
-                        courtUnits.appendChild(p);
+                        
                          p.style.animation = "showHorizontalAnimation 1s forwards";
 
                         index--;
