@@ -64,6 +64,19 @@
                
                 100% {transform: translate(0px, 0px)  scale(1.0, 1.0)}
             }
+            
+             /* The animation code */
+            @keyframes showVerticalAnimation {
+                0% {transform: translate(0px, -300px); opacity:0.1} 
+                100% {transform: translate(0px,0px); opacity:1.0 }
+            }
+            
+             @keyframes showHorizontalAnimation {
+                0% {transform: translate(-300px, 0px); opacity:0.1} 
+                100% {transform: translate(0px,0px); opacity:1.0 }
+            }
+            
+
 
 
 
@@ -162,17 +175,10 @@
                                 + "px; background-color: " + infSystems[index].color;
                         p.innerHTML = infSystems[index].name;
 
-                        p.animate([
-                            // keyframes
-                            {transform: 'translateY(-300px)', opacity: '0.1'},
-                            {transform: 'translateY(0px)', opacity: '1.0'},
-                        ], {
-                            // timing options
-                            duration: 1000,
-                            iterations: 1
-                        });
 
                         courtUnits.appendChild(p);
+                         p.style.animation = "showVerticalAnimation 1.5s forwards";
+
                         index++;
                     }
                 }
@@ -197,17 +203,10 @@
                                 + "px; background-color: " + item.color;
                         p.innerHTML =item.name;
 
-                        p.animate([
-                            // keyframes
-                            {transform: 'translateX(-300px)', opacity: '0.1'},
-                            {transform: 'translateX(0px)', opacity: '1.0'},
-                        ], {
-                            // timing options
-                            duration: 1000,
-                            iterations: 1
-                        });
 
                         courtUnits.appendChild(p);
+                         p.style.animation = "showHorizontalAnimation 1s forwards";
+
                         index--;
                     }
                 }
