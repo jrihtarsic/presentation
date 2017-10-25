@@ -325,11 +325,11 @@
                 45% {transform: translate(0px,0px) rotate(-90deg)}
                 47% {transform: translate(-140px,60px) rotate(90deg)}
                 49% {transform: translate(0px,0px) rotate(-90deg)}
-                /*3. LETTER*/
+                /*3. LETTER is digalized now :>
                 70% {transform: translate(0px,0px) rotate(-90deg)}
                 72% {transform: translate(-140px,60px) rotate(90deg)}
                 74% {transform: translate(0px,0px) rotate(-90deg)}                
-
+                */
                 100% {transform: translate(0px,0px) rotate(-90deg)}
             }
 
@@ -370,12 +370,12 @@
                 51% {transform: translate(0px,-60px) rotate(-90deg) scale(0.5)  }
                 52% {transform: translate(0px,-60px) rotate(-90deg) scale(0.001)  }
 
-                72% {transform: translate(0px,-60px) rotate(-90deg) scale(0.001)  }
-                73% {transform: scale(0.001) }
-                74% {transform: scale(0.5) }
-                75% {transform: rotate(-90deg) scale(1.0)  }
-                76% {transform: translate(0px,-60px) rotate(-90deg) scale(0.5)  }
-                77% {transform: translate(0px,-60px) rotate(-90deg) scale(0.001)  }
+                62% {transform: translate(0px,-60px) rotate(-90deg) scale(0.001)  }
+                63% {transform: scale(0.001) }
+                64% {transform: scale(0.5) }
+                65% {transform: rotate(-90deg) scale(1.0)  }
+                66% {transform: translate(0px,-60px) rotate(-90deg) scale(0.5)  }
+                67% {transform: translate(0px,-60px) rotate(-90deg) scale(0.001)  }
 
 
                 100% {transform: translate(0px,-60px) rotate(-90deg) scale(0.001)  }
@@ -406,6 +406,11 @@
 
                 100% {transform: scale(1.0) rotate(90deg)}            
             }
+            
+            @keyframes hideAnimation {
+                0% {transform: scale(1.) }
+                100% {transform: scale(0.001) }            
+            }
 
             @keyframes judgeComputer {
                 0% {transform: scale(0.001) rotate(135deg)}
@@ -419,10 +424,13 @@
 
 
             var text01 = [
-                {color: 'black', fontSize: 32, name: "1 mio zadev/leto;"},
-                {color: 'black', fontSize: 32, name: "900 sodnikov;"},
-                {color: 'black', fontSize: 32, name: "3.204 sod. osebja;"},
-                {color: 'black', fontSize: 30, name: "6 mio sodnih pošiljk."},
+                
+                {color: 'black', fontSize: 28, name: "900 sodnikov;"},
+                {color: 'black', fontSize: 28, name: "3.204 sod. osebja;"},
+                {color: 'black', fontSize: 28, name: "1 mio zadev/leto;"},
+                {color: 'black', fontSize: 30, name: "2 mio doh. pošte;"},
+                {color: 'black', fontSize: 30, name: "6 mio sodnih pošiljk;"},
+                {color: 'black', fontSize: 28, name: "odprema 0 do<br/> nekaj mescev"},
             ];
 
             window.addEventListener('message', function (event) {
@@ -440,20 +448,16 @@
             function nextAnimation() {
                 stopAnimation();;
                 if (indexAnimation === 1) {
-                    document.getElementById("computer-clerk01").style.animation = "clerk01Computer 3s forwards";
-                    document.getElementById("computer-clerk02").style.animation = "clerk02Computer 3s forwards 1.5s";
-                    document.getElementById("book").style.visibility = 'hidden';
-                    document.getElementById("text01").style.visibility="hidden";
-                    document.getElementById("text02").style.visibility="hidden";
-                    document.getElementById("text03").style.visibility="visible";
-                    indexAnimation = 2;
-                } else if (indexAnimation === 2) {
-                    document.getElementById("computer-judge").style.animation = "judgeComputer 3s forwards";
+                    document.getElementById("computer-clerk01").style.animation = "clerk01Computer 2s forwards";
+                    document.getElementById("computer-clerk02").style.animation = "clerk02Computer 2s forwards 1.5s";
+                    document.getElementById("computer-judge").style.animation = "judgeComputer 2s forwards 2s";
+                    
                     document.getElementById("book").style.visibility = 'hidden';
                     document.getElementById("text01").style.visibility="hidden";
                     document.getElementById("text02").style.visibility="hidden";
                     document.getElementById("text03").style.visibility="visible";
                     document.getElementById("doc01").style.visibility = 'hidden';
+                    indexAnimation = 0;
                 }
 
             }
@@ -473,9 +477,8 @@
                 var postofficer = document.getElementById("postofficer");
                 var hammer = document.getElementById("hammer");
                 var doc01 = document.getElementById("doc01");
-
-
                 var text02 = document.getElementById("text02");
+                var ledger = document.getElementById("book");
 
 
 
@@ -488,7 +491,11 @@
                 postofficer.style.animation = '';
                 hammer.style.animation = '';
                 doc01.style.animation = '';
-                text02.style.animation = '';
+                ledger.style.animation = '';
+                text02.style.animation = '';                
+                document.getElementById("computer-clerk01").style.animation = "";
+                document.getElementById("computer-clerk02").style.animation = "";
+                document.getElementById("computer-judge").style.animation = "";
 
 
                 var envps = document.getElementsByClassName("envelope");
@@ -501,13 +508,9 @@
 
             }
             function startAnimation() {
-                document.getElementById("book").style.visibility = "";
-                document.getElementById("doc01").visibility = 'visible';
-
-                document.getElementById("computer-clerk01").style.animation = "";
-                document.getElementById("computer-clerk02").style.animation = "";
-                document.getElementById("computer-judge").style.animation = "";
-
+                
+                
+                
 
                 var customer01 = document.getElementById("customer01");
                 var customer02 = document.getElementById("customer02");
@@ -519,21 +522,31 @@
                 var hammer = document.getElementById("hammer");
                 var doc01 = document.getElementById("doc01");
                 var text02 = document.getElementById("text02");
+                var ledger = document.getElementById("book");
                 document.getElementById("text03").style.visibility="hidden";
+                
+                
+                ledger.style.animation = "hideAnimation 2s forwards 8s";
+                doc01.style.animation = "hideAnimation 2s forwards 8s";
+                
+                document.getElementById("computer-clerk01").style.animation = "clerk01Computer 2s forwards 8s";
+                document.getElementById("computer-clerk02").style.animation = "clerk02Computer 2s forwards 11s";
+                document.getElementById("computer-judge").style.animation = "judgeComputer 2s forwards 12s";
+                
 
 
                 customer01.style.animation = 'customer01Animation 24s forwards';
                 customer02.style.animation = 'customer02Animation 24s forwards';
                 customer03.style.animation = 'customer03Animation 24s forwards';
                 customer04.style.animation = 'customer04Animation 24s forwards';
-                clerk01.style.animation = 'clerk01Animation 6s  forwards 0s 3';
+                clerk01.style.animation = 'clerk01Animation 6s  forwards 0s 2';
                 clerk02.style.animation = 'clerk02Animation 24s forwards';
                 postofficer.style.animation = 'postofficerAnimation 24s forwards';
                 hammer.style.animation = 'hammerAnimation 6s forwards  0s 3';
-                doc01.style.animation = 'doc01Animation 6s forwards 0s 3';
+                doc01.style.animation = 'doc01Animation 6s forwards 0s 2';
 
                 text02.style.visibility="visible";
-                text02.style.animation = 'text02Animation 24s forwards';
+                text02.style.animation = 'text02Animation 12s forwards';
 
                 var envps = document.getElementsByClassName("envelope");
                 for (var i = 0; i < envps.length; i++) {
