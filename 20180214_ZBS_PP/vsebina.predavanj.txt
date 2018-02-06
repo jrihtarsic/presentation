@@ -1,0 +1,26 @@
+Bistvo EU je zagotavljanja miru na naši celini
+ - države, ki trgujejo med seboj se navadno ne bojujejo (vzajemne koristi).
+ - Prost pretok ljudi, blaga, PA stroitev
+ - Konkurečnost evrope (Digitalna tehnologija)
+
+Zorenje standarda 
+ - Poenotenje evropskega digitalnega trga
+ - PEPPOL (Spletne storitve  - V1 )
+ - SPOCS  (Spletne storitve - V2)
+ - ....
+ - e-CODEX (ebMS 3.0)
+ - e-SENS (ebMS 3.0)
+	
+- eVlaganje
+postopek vlaganja -  oddaja 
+
+
+Ponovna Uporaba gradnikov
+ - bačništvo - spletne banke 
+
+Možnosti razvoja
+ - druge implementacije  (CEF Digital)
+ - Prevzem kode in razvijanje svoje razlićice
+ - uporaba kode in razvoj samo tega kar potrebujete
+
+eVlaganje

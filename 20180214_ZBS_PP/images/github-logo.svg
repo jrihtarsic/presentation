@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8763"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="225"
+   height="255"
+   viewBox="0 0 225 255"
+   sodipodi:docname="github-logo.svg">
+  <metadata
+     id="metadata8769">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8767" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1378"
+     id="namedview8765"
+     showgrid="false"
+     inkscape:zoom="3.2110967"
+     inkscape:cx="83.069024"
+     inkscape:cy="121.01917"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8763" />
+  <path
+     style="fill:#000000"
+     d="M 75.39125,165.19098 C 58.336919,157.29698 43.987194,143.22215 36.2088,126.75915 26.494542,106.19889 26.206749,81.436188 35.442231,60.800954 45.337835,38.690778 64.814318,22.437466 89.006715,16.100877 c 10.494104,-2.748666 28.795605,-2.702682 39.637965,0.09959 22.78143,5.887998 41.76247,21.412673 51.89885,42.448288 5.84001,12.119548 7.98079,21.431197 7.93165,34.5 -0.0907,24.133155 -10.72757,46.501175 -29.02902,61.044665 -8.86672,7.04606 -23.01313,14.24201 -27.08001,13.77496 l -2.78313,-0.31962 -0.5209,-16 c -0.41693,-12.80652 -0.88073,-16.66722 -2.32374,-19.34293 -0.99156,-1.83861 -1.65715,-3.4773 -1.4791,-3.64153 0.17806,-0.16423 3.24874,-1.03904 6.82374,-1.94403 16.8215,-4.25827 24.81574,-12.93038 27.23768,-29.547292 1.41982,-9.741383 0.0924,-18.121436 -3.93776,-24.860041 -2.4386,-4.0774 -2.74719,-5.488468 -2.45288,-11.216227 0.18516,-3.603625 -0.17202,-8.441125 -0.79374,-10.75 -1.04177,-3.868864 -1.39267,-4.197955 -4.47605,-4.197955 -1.90779,0 -6.79979,1.728845 -11.38279,4.022712 -7.47425,3.740978 -8.3403,3.952798 -12.3658,3.024446 -5.75618,-1.327477 -24.473961,-1.316577 -30.696295,0.01787 -4.517974,0.968932 -5.311949,0.849816 -8.799221,-1.320107 -5.263085,-3.274902 -11.808364,-5.744921 -15.223421,-5.744921 -2.52787,0 -2.993373,0.512781 -4.120706,4.539221 -0.782685,2.795477 -1.043701,6.972276 -0.679463,10.872817 0.531222,5.688739 0.337539,6.677443 -1.902301,9.710779 -8.282911,11.217245 -6.410046,34.409618 3.660992,45.335398 4.622481,5.0148 10.63917,8.13532 19.856687,10.29855 l 6.957941,1.63293 -1.434587,2.55516 c -0.789023,1.40533 -1.867915,3.76999 -2.397538,5.25478 -0.711774,1.99547 -2.017763,2.98367 -5.00685,3.78855 -5.796363,1.5608 -11.559714,-0.20908 -15.720956,-4.82778 -1.813823,-2.01322 -4.580372,-5.08879 -6.147885,-6.8346 -2.943055,-3.27781 -8.628145,-5.13338 -11.891238,-3.88122 -1.44512,0.55455 -0.972747,1.36076 2.858216,4.87819 2.524201,2.31761 5.752746,6.50949 7.174547,9.31528 4.616833,9.11088 11.814324,13.01339 22.384257,12.13685 6.059731,-0.50252 6.299159,-0.20328 6.299159,7.87263 0,10.15049 -2.77632,11.44716 -13.691768,6.39469 z"
+     id="path8773"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ssssssssscsscsssssssssssssssscsssssssssss" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="24.290766"
+     y="226.66078"
+     id="text8775"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan8777"
+       x="24.290766"
+       y="226.66078"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">GITHUB</tspan></text>
+</svg>
