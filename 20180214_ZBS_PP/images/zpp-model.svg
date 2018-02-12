@@ -500,8 +500,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="348.40383"
-     inkscape:cy="232.43628"
+     inkscape:cx="171.61812"
+     inkscape:cy="231.00771"
      inkscape:document-units="px"
      inkscape:current-layer="g5091"
      showgrid="false"
@@ -519,7 +519,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -706,29 +706,6 @@
            sodipodi:role="line"
            x="-443.13159"
            y="230.90918">MSH</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:18.03603935px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="-452.32339"
-         y="470.26859"
-         id="text5841-34-0"
-         sodipodi:linespacing="125%"
-         transform="matrix(0,-0.99099277,1.0090891,0,0,0)"><tspan
-           style="font-size:17.5px;text-align:center;text-anchor:middle"
-           sodipodi:role="line"
-           x="-452.32339"
-           y="470.26859"
-           id="tspan5845-02-1">Naslovnikov</tspan><tspan
-           style="font-size:17.5px;text-align:center;text-anchor:middle"
-           id="tspan8839-9"
-           sodipodi:role="line"
-           x="-452.32339"
-           y="492.14359">MSH</tspan><tspan
-           style="font-size:12.5px;text-align:center;text-anchor:middle"
-           sodipodi:role="line"
-           x="-452.32339"
-           y="509.03485"
-           id="tspan4318">Lauretius, ponudnik,...</tspan></text>
       <g
          transform="matrix(0.91951734,0,0,0.91951734,462.41184,-428.16939)"
          id="g5863-2">
@@ -1021,6 +998,34 @@
            x="-12.418674"
            y="349.81754"
            style="font-size:27.5px">Sodišče</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:18.03603935px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="-459.58304"
+         y="466.42697"
+         id="text5841-34-0-3"
+         sodipodi:linespacing="125%"
+         transform="matrix(0,-0.99099277,1.0090891,0,0,0)"><tspan
+           style="font-size:17.5px;text-align:center;text-anchor:middle"
+           id="tspan8839-9-6"
+           sodipodi:role="line"
+           x="-459.58304"
+           y="466.42697">Pošiljateljev MSH</tspan><tspan
+           style="font-size:12.5px;text-align:center;text-anchor:middle"
+           sodipodi:role="line"
+           x="-457.59329"
+           y="483.31824"
+           id="tspan4318-7">Lauretius, Domibus, </tspan><tspan
+           style="font-size:12.5px;text-align:center;text-anchor:middle"
+           sodipodi:role="line"
+           x="-457.59329"
+           y="498.94324"
+           id="tspan4309">EESSI AS4.NET, </tspan><tspan
+           style="font-size:12.5px;text-align:center;text-anchor:middle"
+           sodipodi:role="line"
+           x="-459.58304"
+           y="514.56824"
+           id="tspan4313">ponudnik,...</tspan></text>
     </g>
   </g>
 </svg>
