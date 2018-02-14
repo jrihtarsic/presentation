@@ -500,8 +500,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="171.61812"
-     inkscape:cy="231.00771"
+     inkscape:cx="-5.1675943"
+     inkscape:cy="229.57914"
      inkscape:document-units="px"
      inkscape:current-layer="g5091"
      showgrid="false"
@@ -691,21 +691,26 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.03603935px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="-443.13159"
-         y="208.36414"
+         x="-450.33939"
+         y="204.11702"
          id="text5841-34"
          sodipodi:linespacing="125%"
          transform="matrix(0,-0.99099277,1.0090891,0,0,0)"><tspan
            style="text-align:center;text-anchor:middle"
            sodipodi:role="line"
-           x="-443.13159"
-           y="208.36414"
-           id="tspan5845-02">Laurentius</tspan><tspan
+           x="-450.33939"
+           y="204.11702"
+           id="tspan5845-02">Pošiljateljev</tspan><tspan
            style="text-align:center;text-anchor:middle"
            id="tspan8839"
            sodipodi:role="line"
-           x="-443.13159"
-           y="230.90918">MSH</tspan></text>
+           x="-450.33939"
+           y="226.66206">MSH</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           sodipodi:role="line"
+           x="-450.33939"
+           y="249.20712"
+           id="tspan4307">Laurentius</tspan></text>
       <g
          transform="matrix(0.91951734,0,0,0.91951734,462.41184,-428.16939)"
          id="g5863-2">
@@ -1010,7 +1015,7 @@
            id="tspan8839-9-6"
            sodipodi:role="line"
            x="-459.58304"
-           y="466.42697">Pošiljateljev MSH</tspan><tspan
+           y="466.42697">Naslovnikov MSH</tspan><tspan
            style="font-size:12.5px;text-align:center;text-anchor:middle"
            sodipodi:role="line"
            x="-457.59329"
@@ -1025,7 +1030,7 @@
            sodipodi:role="line"
            x="-459.58304"
            y="514.56824"
-           id="tspan4313">ponudnik,...</tspan></text>
+           id="tspan4313">ponudnik SVEV (ERDS),...</tspan></text>
     </g>
   </g>
 </svg>

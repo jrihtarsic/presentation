@@ -21,6 +21,17 @@
                 height: 300px;
                 width: 800px;
                 overflow: hidden;
+            }
+            #zppmodel-flow{
+                background: transparent url("images/zpp-model-navadno.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 300px;
+                width: 800px;
+                overflow: hidden;
+                visibility: hidden;
 
 
             }
@@ -165,7 +176,7 @@
             var textSend = [
                 {color: 'black', fontSize: 22, name: "Preveri"},
                 {color: 'black', fontSize: 22, name: "Izdelaj obvestilo"},
-                {color: 'black', fontSize: 22, name: "šifriraj vsebine"},
+                {color: 'black', fontSize: 22, name: "Šifriraj vsebine"},
                 {color: 'black', fontSize: 22, name: "Dodaj metapodatke pošiljke"},
                 {color: 'black', fontSize: 22, name: "Pošlji"},
             ];
@@ -179,7 +190,7 @@
                 {color: 'black', fontSize: 20, name: "Prenesi sporočilo"},
                 {color: 'black', fontSize: 20, name: "Oddaj v predal"},
                 {color: 'black', fontSize: 22, name: "Potrdilo o dostavi"},
-                {color: 'black', fontSize: 22, name: "Dešifiraj vsebine"},
+                {color: 'black', fontSize: 22, name: "Dešifriraj vsebine"},
             ];
 
             window.addEventListener('message', function (event) {
@@ -214,8 +225,6 @@
                     startTextAnimation(textMessageMEP, document.getElementById("mep"));
                     document.getElementById("letter").style.animation = "sentLetter 2s forwards"                    
                     document.getElementById("as4Reciept").style.animation = "sendReciept 2s forwards"
-                   
-             
                     document.getElementById("dadviceKey").style.animation = "sendDeliveryAvice 2s forwards 2s"
                     document.getElementById("dadvice").style.animation = "sendReciept 2s forwards 2s"
 
@@ -226,24 +235,19 @@
                    
                     document.getElementById("letter").style.animation = "deliverLetter 3s forwards"
                 }
+                else if (animationIndex === 5) {
+                    animationIndex = 6;
+                    document.getElementById("zppmodel-flow").style.visibility="visible";
+                }
 
             }
 
             function resetAnimation() {
-
-
-
+                document.getElementById("zppmodel-flow").style.visibility="hidden";
             }
             function startAnimation() {
                 animationIndex = 1;
-
-
-                // document.getElementById("inmail").style.animation = "clerk01Documents 12s forwards";
-
-
-
-
-
+                document.getElementById("zppmodel-flow").style.visibility="hidden";
             }
             function restartAnimation() {
                 
@@ -304,10 +308,8 @@
             <div id="as4Reciept"> </div>
             <div id="dadviceKey"> </div>
             <div id="dadvice"> </div>
-            
-            
-            
         </div>
+        <div id="zppmodel-flow"></div>
         <ul id="create" style="position:absolute; top: 300px;left: 0px;width:190px">
 
         </ul>

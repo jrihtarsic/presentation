@@ -21,6 +21,18 @@
                 height: 300px;
                 width: 800px;
                 overflow: hidden;
+            }
+            
+             #zppmodel-flow{
+                background: transparent url("images/vlaganje-model-flow.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 300px;
+                width: 800px;
+                overflow: hidden;
+                visibility: hidden;
 
 
             }
@@ -217,29 +229,22 @@
 
                 } else if (animationIndex === 4) {
                     animationIndex = 5;
-   
-                    startTextAnimation(textDelivery, document.getElementById("deliver"));
-                   
+                    startTextAnimation(textDelivery, document.getElementById("deliver"));                   
                     document.getElementById("letter").style.animation = "deliverLetter 3s forwards"
+                }
+                else if (animationIndex === 5) {
+                    animationIndex = 6;
+                    document.getElementById("zppmodel-flow").style.visibility="visible";
                 }
 
             }
 
             function resetAnimation() {
-
-
-
+                document.getElementById("zppmodel-flow").style.visibility="hidden";
             }
             function startAnimation() {
                 animationIndex = 1;
-
-
-                // document.getElementById("inmail").style.animation = "clerk01Documents 12s forwards";
-
-
-
-
-
+                document.getElementById("zppmodel-flow").style.visibility="hidden";
             }
             function restartAnimation() {
                 
@@ -300,23 +305,15 @@
             <div id="as4Reciept"> </div>
             <div id="dadviceKey"> </div>
             <div id="dadvice"> </div>
-            
-            
-            
         </div>
+        <div id="zppmodel-flow"></div>
         <ul id="create" style="position:absolute; top: 300px;left: 0px;width:190px">
-
         </ul>
         <ul id="send" style=" position:absolute; top: 300px;left: 200px;width:170px">
-
         </ul>
-        
-        
         <ul id="mep" style="position:absolute; top: 280px;left: 350px;width:250px">
-
         </ul>
         <ul id="deliver" style="position:absolute; top: 300px;left: 610px;width:150px">
-
         </ul>
 
 

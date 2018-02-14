@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg     
+<svg
    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9435,8 +9435,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="64.214335"
-     inkscape:cy="131.30407"
+     inkscape:cx="-23.29013"
+     inkscape:cy="130.59696"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -12764,34 +12764,34 @@
              offset="0.6124" />
         </linearGradient>
         <g
-           style="overflow:visible;stroke:#000000;stroke-width:3.66943836"          
+           style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
            id="Layer_1-5-2-7"
            transform="matrix(0.06427328,0,0.02398392,0.03497605,-2.176428,30.066749)">
           <path
              id="path158-1-8"
              d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path159-4-0"
              d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path160-7-7"
              d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path161-7-2"
              d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path162-5-7"
              d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
              style="opacity:0.2;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="83.324303"
              x2="83.149902"
@@ -12812,7 +12812,7 @@
              id="path169-9-9"
              d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
              style="fill:url(#linearGradient20969);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="89.750298"
              x2="83.831703"
@@ -12833,7 +12833,7 @@
              id="path176-0-8"
              d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
              style="fill:url(#linearGradient20971);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
              y2="237.576"
@@ -12855,7 +12855,7 @@
              id="path183-4-4"
              d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
              style="fill:url(#linearGradient20973);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="77.567299"
              x2="126.0381"
@@ -12876,7 +12876,7 @@
              id="path190-2-5"
              d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
              style="fill:url(#linearGradient20975);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
              y2="13.3879"
@@ -12930,17 +12930,17 @@
              id="path205-7-5"
              d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
              style="fill:url(#linearGradient20977);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path206-8-4"
              d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
              style="opacity:0.3;fill:#ffffff;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path207-1-3"
              d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
              style="opacity:0.4;fill:#ffffff;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
         </g>
         <path
            sodipodi:nodetypes="cccccc"
@@ -13743,34 +13743,34 @@
            d="m 24.062443,25.075341 -0.03664,2.021086 c 0,-0.0012 -0.04646,2.579746 -0.05823,3.233973 0.280051,0.106187 2.805089,1.060097 3.443055,1.300787 0.0085,-0.441264 0.104692,-5.787763 0.110581,-6.139358 -0.376892,-0.06726 -2.901275,-0.517365 -3.454833,-0.615883 -0.0019,0.09616 -0.0039,0.199395 -0.0039,0.199395 z"
            style="overflow:visible;fill:#8cc7ff;fill-opacity:1" />
         <g
-           style="overflow:visible;stroke:#000000;stroke-width:3.66943836"           
+           style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
            id="Layer_1-5-2"
            transform="matrix(0.06427328,0,0.02398392,0.03497605,12.812509,30.132213)">
           <path
              id="path158-1"
              d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path159-4"
              d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path160-7"
              d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path161-7"
              d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
              style="fill:#3a55a5;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path162-5"
              d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
              style="opacity:0.2;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="83.324303"
              x2="83.149902"
@@ -13791,7 +13791,7 @@
              id="path169-9"
              d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
              style="fill:url(#linearGradient20979);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="89.750298"
              x2="83.831703"
@@ -13812,7 +13812,7 @@
              id="path176-0"
              d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
              style="fill:url(#linearGradient20981);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
              y2="237.576"
@@ -13834,7 +13834,7 @@
              id="path183-4"
              d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
              style="fill:url(#linearGradient20983);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="77.567299"
              x2="126.0381"
@@ -13855,7 +13855,7 @@
              id="path190-2"
              d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
              style="fill:url(#linearGradient20985);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
              y2="13.3879"
@@ -13909,17 +13909,17 @@
              id="path205-7"
              d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
              style="fill:url(#linearGradient20987);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path206-8"
              d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
              style="opacity:0.3;fill:#ffffff;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              id="path207-1"
              d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
              style="opacity:0.4;fill:#ffffff;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
         </g>
         <path
            inkscape:transform-center-y="0.28364503"
@@ -13947,17 +13947,17 @@
            style="overflow:visible;fill:url(#XMLID_41_-8-7-3)"
            inkscape:connector-curvature="0" />
         <g
-           style="overflow:visible;stroke:#000000;stroke-width:2.0189383"           
+           style="overflow:visible;stroke:#000000;stroke-width:2.0189383"
            id="Layer_2"
            transform="matrix(0.089762,0,0,0.08272978,15.781621,-12.038182)">
           <path
              id="path156"
              d="M 256,256 0,256 0,0 l 256,0 0,256 z"
              style="opacity:0.36000001;fill:none;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
         </g>
         <g
-           style="overflow:visible;stroke:#000000;stroke-width:3.66943836"           
+           style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
            id="Layer_1-5"
            transform="matrix(0.06427328,0,0.02398392,0.03497605,33.576126,37.538885)">
           <linearGradient
@@ -13981,7 +13981,7 @@
              id="path169"
              d="m -36.969053,-162.60028 -15.879,191.231998 85.328462,-17.13355 70.849861,-193.258418 c 0,0 -124.074367,16.18095 -140.299323,19.15997 z"
              style="fill:url(#XMLID_1_-0);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="89.750298"
              x2="83.831703"
@@ -14003,7 +14003,7 @@
              id="path176"
              d="m -30.629053,-151.05028 c -0.701,8.44 -13.662,164.536998 -14.838,178.698998 14.192,-2.605 71.488864,-24.1254705 79.927864,-25.6754705 0.7,-8.44 65.663279,-181.4002275 65.663279,-181.4002275 0,0 -111.882108,24.9115 -130.753143,28.3767 z"
              style="fill:url(#XMLID_2_-8);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
              y2="237.576"
@@ -14026,7 +14026,7 @@
              id="path183"
              d="m 36.157125,-1.4904825 -79.384178,18.6302005 14.205,-171.066998 130.374423,-24.71347 z"
              style="fill:url(#XMLID_3_-1);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              y2="77.567299"
              x2="126.0381"
@@ -14048,7 +14048,7 @@
              id="path190"
              d="m 99.486197,-176.18233 -43.90025,111.905588 -84.143,-88.699538 z"
              style="fill:url(#XMLID_4_-0);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <linearGradient
              gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
              y2="13.3879"
@@ -14103,13 +14103,13 @@
              id="path205"
              d="m 99.782457,-175.62871 -36.47751,96.709428 -91.983,-75.070998 z"
              style="fill:url(#XMLID_5_-2);stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
           <path
              sodipodi:nodetypes="cccccccc"
              id="path207"
              d="m 8.3679469,-154.69828 c -10.43,1.937 -18.4759999,3.431 -22.6989999,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.39799995,12.567 70.439,57.487998 77.371,63.145998 1.525,-1.581 1.86706,-6.08319 8.82606,-13.300188 -7.203,0.413 -10.10306,-0.55081 -15.30006,-1.85081 -11.482,-2.871 -42.648,-29.525 -49.6200001,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
              style="opacity:0.4;fill:#ffffff;stroke:none"
-                inkscape:connector-curvature="0" />
+             inkscape:connector-curvature="0" />
         </g>
       </g>
       <path
@@ -15282,34 +15282,34 @@
       </g>
     </g>
     <g
-       style="overflow:visible;stroke:#000000;stroke-width:3.66943836"     
+       style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
        id="Layer_1-5-2-7-0"
        transform="matrix(0.09550347,0,0.03563763,0.05316552,39.487942,976.02358)">
       <path
          id="path158-1-8-2"
          d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path159-4-0-4"
          d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path160-7-7-9"
          d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path161-7-2-0"
          d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path162-5-7-1"
          d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
          style="opacity:0.2;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="83.324303"
          x2="83.149902"
@@ -15330,7 +15330,7 @@
          id="path169-9-9-0"
          d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
          style="fill:url(#linearGradient20969-7);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="89.750298"
          x2="83.831703"
@@ -15351,7 +15351,7 @@
          id="path176-0-8-9"
          d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
          style="fill:url(#linearGradient20971-7);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="237.576"
@@ -15373,7 +15373,7 @@
          id="path183-4-4-3"
          d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
          style="fill:url(#linearGradient20973-3);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="77.567299"
          x2="126.0381"
@@ -15394,7 +15394,7 @@
          id="path190-2-5-3"
          d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
          style="fill:url(#linearGradient20975-8);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="13.3879"
@@ -15448,48 +15448,47 @@
          id="path205-7-5-7"
          d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
          style="fill:url(#linearGradient20977-6);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path206-8-4-9"
          d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
          style="opacity:0.3;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path207-1-3-1"
          d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
          style="opacity:0.4;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
     </g>
     <g
        style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
-      
        id="Layer_1-5-2-7-0-4"
        transform="matrix(0.09550347,0,0.03563763,0.05316552,39.866749,1021.6396)">
       <path
          id="path158-1-8-2-2"
          d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path159-4-0-4-0"
          d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path160-7-7-9-6"
          d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path161-7-2-0-5"
          d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path162-5-7-1-9"
          d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
          style="opacity:0.2;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="83.324303"
          x2="83.149902"
@@ -15510,7 +15509,7 @@
          id="path169-9-9-0-1"
          d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
          style="fill:url(#linearGradient20969-7-0);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="89.750298"
          x2="83.831703"
@@ -15531,7 +15530,7 @@
          id="path176-0-8-9-3"
          d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
          style="fill:url(#linearGradient20971-7-9);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="237.576"
@@ -15553,7 +15552,7 @@
          id="path183-4-4-3-7"
          d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
          style="fill:url(#linearGradient20973-3-4);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="77.567299"
          x2="126.0381"
@@ -15574,7 +15573,7 @@
          id="path190-2-5-3-9"
          d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
          style="fill:url(#linearGradient20975-8-2);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="13.3879"
@@ -15628,17 +15627,17 @@
          id="path205-7-5-7-9"
          d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
          style="fill:url(#linearGradient20977-6-3);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path206-8-4-9-5"
          d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
          style="opacity:0.3;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path207-1-3-1-4"
          d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
          style="opacity:0.4;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
     </g>
     <g
        style="overflow:visible"
@@ -15921,7 +15920,7 @@
          id="tspan22207-2"
          x="188.74496"
          y="885.57501"
-         style="font-size:10px">Statusi</tspan><tspan
+         style="font-size:10px">Statusi,</tspan><tspan
          sodipodi:role="line"
          x="188.74496"
          y="898.07501"
@@ -15959,34 +15958,33 @@
        sodipodi:nodetypes="ccc" />
     <g
        style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
-       
        id="Layer_1-5-2-7-0-0"
        transform="matrix(0.09550347,0,0.03563763,0.05316552,137.80074,953.38074)">
       <path
          id="path158-1-8-2-3"
          d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path159-4-0-4-5"
          d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path160-7-7-9-5"
          d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path161-7-2-0-8"
          d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path162-5-7-1-7"
          d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
          style="opacity:0.2;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="83.324303"
          x2="83.149902"
@@ -16007,7 +16005,7 @@
          id="path169-9-9-0-0"
          d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
          style="fill:url(#linearGradient20969-7-1);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="89.750298"
          x2="83.831703"
@@ -16028,7 +16026,7 @@
          id="path176-0-8-9-4"
          d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
          style="fill:url(#linearGradient20971-7-1);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="237.576"
@@ -16050,7 +16048,7 @@
          id="path183-4-4-3-0"
          d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
          style="fill:url(#linearGradient20973-3-6);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="77.567299"
          x2="126.0381"
@@ -16071,7 +16069,7 @@
          id="path190-2-5-3-6"
          d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
          style="fill:url(#linearGradient20975-8-4);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="13.3879"
@@ -16125,48 +16123,47 @@
          id="path205-7-5-7-1"
          d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
          style="fill:url(#linearGradient20977-6-7);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path206-8-4-9-0"
          d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
          style="opacity:0.3;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path207-1-3-1-9"
          d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
          style="opacity:0.4;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
     </g>
     <g
        style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
-      
        id="Layer_1-5-2-7-0-9"
        transform="matrix(0.09550347,0,0.03563763,0.05316552,127.80074,974.13074)">
       <path
          id="path158-1-8-2-38"
          d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path159-4-0-4-8"
          d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path160-7-7-9-4"
          d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path161-7-2-0-0"
          d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path162-5-7-1-0"
          d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
          style="opacity:0.2;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="83.324303"
          x2="83.149902"
@@ -16187,7 +16184,7 @@
          id="path169-9-9-0-2"
          d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
          style="fill:url(#linearGradient20969-7-4);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="89.750298"
          x2="83.831703"
@@ -16208,7 +16205,7 @@
          id="path176-0-8-9-5"
          d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
          style="fill:url(#linearGradient20971-7-2);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="237.576"
@@ -16230,7 +16227,7 @@
          id="path183-4-4-3-9"
          d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
          style="fill:url(#linearGradient20973-3-1);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="77.567299"
          x2="126.0381"
@@ -16251,7 +16248,7 @@
          id="path190-2-5-3-5"
          d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
          style="fill:url(#linearGradient20975-8-41);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="13.3879"
@@ -16305,48 +16302,47 @@
          id="path205-7-5-7-7"
          d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
          style="fill:url(#linearGradient20977-6-1);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path206-8-4-9-03"
          d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
          style="opacity:0.3;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path207-1-3-1-7"
          d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
          style="opacity:0.4;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
     </g>
     <g
        style="overflow:visible;stroke:#000000;stroke-width:3.66943836"
-     
        id="Layer_1-5-2-7-0-7"
        transform="matrix(0.09550347,0,0.03563763,0.05316552,130.80074,996.13074)">
       <path
          id="path158-1-8-2-8"
          d="M 236.071,3.411 230.976,10.625 22.298,48.94 1.743,234.753 6.419,240.172 224.868,200.061 240.747,8.83 236.071,3.411 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path159-4-0-4-9"
          d="M 216.889,191.803 16.04,228.68 30.245,57.613 231.095,20.735 216.889,191.803 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path160-7-7-9-9"
          d="M 230.718,21.166 122.726,152.67 30.709,58.563 230.718,21.166 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path161-7-2-0-3"
          d="M 230.786,20.368 122.572,132.621 30.588,57.55 230.786,20.368 Z"
          style="fill:#3a55a5;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path162-5-7-1-94"
          d="M 29.79,58.581 13.911,249.813 232.361,209.702 248.24,18.471 29.79,58.581 Z"
          style="opacity:0.2;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="83.324303"
          x2="83.149902"
@@ -16367,7 +16363,7 @@
          id="path169-9-9-0-5"
          d="M 231.39,4.271 226.301,5.206 17.622,43.521 1.743,234.753 220.192,194.642 236.071,3.411 231.39,4.271 Z"
          style="fill:url(#linearGradient20969-7-2);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="89.750298"
          x2="83.831703"
@@ -16388,7 +16384,7 @@
          id="path176-0-8-9-6"
          d="m 228.074,17.594 c 0,0 -195.372,35.872 -204.112,37.477 -0.701,8.44 -13.662,164.537 -14.838,178.699 14.192,-2.605 197.644,-36.29 206.083,-37.84 0.7,-8.44 13.663,-164.535 14.836,-178.697 -0.933,0.172 -1.969,0.361 -1.969,0.361 z"
          style="fill:url(#linearGradient20971-7-17);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="237.576"
@@ -16410,7 +16406,7 @@
          id="path183-4-4-3-99"
          d="M 212.213,186.384 11.364,223.261 25.569,52.194 226.419,15.316 212.213,186.384 Z"
          style="fill:url(#linearGradient20973-3-41);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          y2="77.567299"
          x2="126.0381"
@@ -16431,7 +16427,7 @@
          id="path190-2-5-3-55"
          d="M 226.042,15.747 118.05,147.251 26.034,53.145 226.042,15.747 Z"
          style="fill:url(#linearGradient20975-8-3);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <linearGradient
          gradientTransform="matrix(0.9929,-0.1191,-0.056,1.0138,7.7556,8.876)"
          y2="13.3879"
@@ -16485,17 +16481,17 @@
          id="path205-7-5-7-76"
          d="M 226.11,14.949 117.896,127.202 25.913,52.131 226.11,14.949 Z"
          style="fill:url(#linearGradient20977-6-8);stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path206-8-4-9-52"
          d="m 161.286,188.736 c 23.618,-4.43 44.142,-8.28 46.437,-8.708 0.28,-2.759 2.399,-23.476 4.826,-47.208 -14.987,40.14 -31.536,49.326 -51.263,55.916 z"
          style="opacity:0.3;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
       <path
          id="path207-1-3-1-40"
          d="m 62.959,51.423 c -10.43,1.937 -18.476,3.431 -22.699,4.216 -0.077,0.061 -0.154,0.123 -0.228,0.182 15.398,12.567 70.439,57.488 77.371,63.146 1.525,-1.581 6.515,-6.759 13.474,-13.976 -7.203,0.413 -14.751,0.125 -19.948,-1.175 -11.482,-2.871 -42.648,-29.525 -49.62,-41.008 -3.549,-5.846 -1.356,-9.35 1.65,-11.385 z"
          style="opacity:0.4;fill:#ffffff;stroke:none"
-        inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0" />
     </g>
     <text
        xml:space="preserve"

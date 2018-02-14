@@ -353,8 +353,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="166.12198"
-     inkscape:cy="335.10394"
+     inkscape:cx="34.234936"
+     inkscape:cy="332.2468"
      inkscape:document-units="px"
      inkscape:current-layer="g5091"
      showgrid="false"
@@ -493,13 +493,13 @@
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="148.67094"
-         y="137.49573"
+         y="121.49573"
          id="text4315"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan4317"
            x="148.67094"
-           y="137.49573"
+           y="121.49573"
            style="font-size:30px">EVIP</tspan></text>
       <g
          transform="matrix(1.0001928,0,0,1.0184571,240.50815,-437.03785)"
@@ -1074,21 +1074,21 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="-275.91504"
+         x="-287.91504"
          y="173.42673"
          id="text4755"
          sodipodi:linespacing="125%"
          transform="matrix(0,-1,1,0,0,0)"><tspan
            sodipodi:role="line"
-           id="tspan4757"
-           x="-275.91504"
+           x="-287.91504"
            y="173.42673"
-           style="font-size:20px">evidetiranje</tspan><tspan
-           sodipodi:role="line"
-           x="-275.91504"
-           y="198.42673"
            id="tspan4759"
-           style="font-size:20px">digitalizacija</tspan></text>
+           style="font-size:20px">Evidetiranje in </tspan><tspan
+           sodipodi:role="line"
+           x="-287.91504"
+           y="198.42673"
+           style="font-size:20px"
+           id="tspan4354">digitalizacija</tspan></text>
       <rect
          y="427.74438"
          x="145.56319"
@@ -1123,7 +1123,7 @@
            x="-513.40747"
            y="215.22223"
            style="font-size:15px;text-align:start;text-anchor:start"
-           id="tspan4818"> valaganj)</tspan></text>
+           id="tspan4818"> vlaganje)</tspan></text>
       <path
          style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:0.64040667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m -4.5734869,262.14584 68.3722069,0 0,-12.15219 38.95016,14.89637 -38.95016,14.44177 0,-11.6976 -68.3722069,0.0728 z"

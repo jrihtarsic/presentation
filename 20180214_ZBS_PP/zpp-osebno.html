@@ -24,6 +24,19 @@
 
 
             }
+             #zppmodel-flow{
+                background: transparent url("images/zpp-model-osebno.svg") no-repeat scroll left top;
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 300px;
+                width: 800px;
+                overflow: hidden;
+                visibility: hidden;
+
+
+            }
 
             #letter{
                 background: transparent url("images/court-process/envelope.svg") no-repeat scroll left top;
@@ -165,14 +178,14 @@
             var textSend = [
                 {color: 'black', fontSize: 22, name: "Preveri"},
                 {color: 'black', fontSize: 22, name: "Izdelaj obvestilo"},
-                {color: 'black', fontSize: 22, name: "šifriraj vsebine"},
+                {color: 'black', fontSize: 22, name: "Šifriraj vsebine"},
                 {color: 'black', fontSize: 22, name: "Dodaj metapodatke pošiljke"},
                 {color: 'black', fontSize: 22, name: "Pošlji"},
             ];
 
             var textReceive = [
                 {color: 'black', fontSize: 22, name: "Podpiši vročilnico"},
-                {color: 'black', fontSize: 22, name: "Dešifiraj vsebine"},
+                {color: 'black', fontSize: 22, name: "Dešifriraj vsebine"},
             ];
                         
 
@@ -225,29 +238,28 @@
                     document.getElementById("letter").style.animation = "receiveLetter 3s forwards"
                     document.getElementById("dadviceKey").style.animation = "sendDeliveryAvice 3s forwards"
                     document.getElementById("dadvice").style.animation = "sendReciept 3s forwards"
-                    
-                    
-
-                    
-
-
-
                 } else if (animationIndex === 5) {
                     animationIndex = 6;
-                    startTextAnimation(textDelivery, document.getElementById("deliver"));
-                   
+                    startTextAnimation(textDelivery, document.getElementById("deliver"));                   
                     document.getElementById("letter").style.animation = "deliverLetter 3s forwards"
+
+                }
+                else if (animationIndex === 6) {
+                    animationIndex = 7;
+                    document.getElementById("zppmodel-flow").style.visibility="visible";
                 }
 
             }
 
             function resetAnimation() {
+                document.getElementById("zppmodel-flow").style.visibility="hidden";
 
 
 
             }
             function startAnimation() {
                 animationIndex = 1;
+                document.getElementById("zppmodel-flow").style.visibility="hidden";
 
 
                 // document.getElementById("inmail").style.animation = "clerk01Documents 12s forwards";
@@ -311,15 +323,15 @@
 
     </head>
     <body >
+        
+        
         <div id="zppmodel">
             <div id="letter"> </div>
             <div id="as4Reciept"> </div>
             <div id="dadviceKey"> </div>
             <div id="dadvice"> </div>
-            
-            
-            
         </div>
+        <div id="zppmodel-flow"></div>
         <ul id="create" style="position:absolute; top: 300px;left: 0px;width:190px">
 
         </ul>
