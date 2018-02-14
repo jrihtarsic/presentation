@@ -75,8 +75,8 @@
 .slide {
     background-image: url('../images/zbs-logos-2.svg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom; 
+    
+    background-position: right 50% bottom; 
     
     background-color: #FdFfff;
     background-color: -webkit-linear-gradient(bottom right,  #FaFaFF, #FdFfff);
