@@ -439,8 +439,10 @@
             window.scrollTo(0, 0);
             
             var step = stepsData["impress-" + el.id];
+             
             
             if ( activeStep ) {
+                activeStep.setAttribute("data-step", 0);
                 activeStep.classList.remove("active");
                 body.classList.remove("impress-on-" + activeStep.id);
             }
@@ -528,6 +530,7 @@
             // store current state
             currentState = target;
             activeStep = el;
+            activeStep.setAttribute("data-step", 0);
             
             // And here is where we trigger `impress:stepenter` event.
             // We simply set up a timeout to fire it taking transition duration (and possible delay) into account.
@@ -559,6 +562,29 @@
         
         // `next` API function goes to next step (in document order)
         var next = function () {
+            
+            if (activeStep){
+                
+                var stepCount = activeStep.getAttribute("data-stepcount");
+                if (stepCount){
+                    var index = activeStep.getAttribute("data-step");
+                    if (index){
+                        index = parseInt(index) + 1;
+                    } else {
+                        index = 1;
+                    }
+                    
+                    if (index < stepCount) {                    
+                        activeStep.setAttribute("data-step", index);
+                        triggerEvent(activeStep, "impress:stepnext");
+                        return;
+                    }
+                    
+                }
+                
+                
+            }
+            
             var next = steps.indexOf( activeStep ) + 1;
             next = next < steps.length ? steps[ next ] : steps[ 0 ];
             

@@ -5,7 +5,7 @@
     stroke: red;
 }
 
-.evip-table {
+.jrc-table {
 
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -13,35 +13,47 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     color: rgb(102, 102, 102);
 }
-.evip-table td {
+.jrc-table td {
 
     border: 1px solid rgba(0, 0, 0, .3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     color: black; 
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 22px;
     letter-spacing: 0px;
     padding:   2px 5px 2px 5px;
 
 }
-.evip-table-header {
+.jrc-table-header {
     background-color: #97b9f0;
 }
 
-.evip-table-alternateRow { 
+.jrc-table-alternateRow { 
 
     background-color: #cbcbcb;
 }
 
 
-.evip-table-sumRow td { 
+.jrc-table-sumRow td { 
     font-size: 22px;
     background-color: #cbcbff;
 }
 
-.slide {
-    display: block;
+.notation-source {
+    font-size: 14px;
+    font-weight: bold;
+}
 
+.slide {
+     
+    background: #cdcfff;
+    background: -webkit-linear-gradient(bottom right,  #FaFaFF, #cdcfff);
+    background:    -moz-linear-gradient(left top,#FaFaFF, #cdcfff);
+    background:     -ms-linear-gradient(left topt,#FaFaFF, #cdcfff);
+    background:      -o-linear-gradient(left top,#FaFaFF, #cdcfff);
+    background:         linear-gradient(left top,#FaFaFF, #cdcfff);
+    
+    display: block;
     width: 900px;
     height: 700px;
     padding: 20px 20px;
@@ -59,25 +71,23 @@
     line-height: 36px;
     letter-spacing: -1px;
 
-    background: #cdcfff;
-    background: -webkit-linear-gradient(bottom right,  #FaFaFF, #cdcfff);
-    background:    -moz-linear-gradient(left top,#FaFaFF, #cdcfff);
-    background:     -ms-linear-gradient(left topt,#FaFaFF, #cdcfff);
-    background:      -o-linear-gradient(left top,#FaFaFF, #cdcfff);
-    background:         linear-gradient(left top,#FaFaFF, #cdcfff);
+   
 }
 
-.slide header {
-    background:  url("../images/header.svg")  no-repeat right top ;
-    background-position: 0 0;
+.step header {
+
+    background: url("../images/header.svg") no-repeat scroll left top;
+    background-size: 100% 100%;
+    
     font-family: Arial;
     color:black;
     font-size: 35px;
     line-height: 50px;
     text-align:left;        
-    height:  60px;
-    padding-left: 120px;
-    
+    height:  50px;
+    padding-left: 110px;
+    margin-bottom: 10px;
+
 }
 
 .fistPageTitle {
@@ -86,13 +96,10 @@
     background-position: 0 0;
     position: relative;
     font-family: Arial;
-    color:black;
-    font-size: 35px;
-    line-height: 50px;
-    text-align:left;        
+    color:black;   
     height:  350px;
-   
-    
+
+
 }
 
 
@@ -240,19 +247,19 @@ section {
     padding: 20px 10px 10px 10px;
     font-size: 32px;
     line-height: 35px;
- 
+
 }
 section  ol, section  ul  {    
     font-size: 28px;
     line-height: 30px;    
     padding: 10px 10px 0 40px;
-    
-    
+
+
 }
 
 section  li{    
     padding: 0 10px 10px 10px;
-    
+
 }
 
 .left-section {
@@ -279,8 +286,8 @@ footer {
     font-size: 15px;
     position:absolute;
     bottom:0;    	 	 
-    
-    
+
+
 }
 
 .end-remark {
@@ -373,7 +380,7 @@ footer {
     bottom: 0px;
     margin: 0px;    
     color: #1b2745
-    
+
 }
 .relative-section {
     position: absolute;    
