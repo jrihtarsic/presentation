@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>two year release</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .block {
+                background-color: #8ED6FF;
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+                position: absolute;
+                height: 40px;
+                overflow: visible;
+
+
+            }
+
+
+        </style>
+        <script>
+            var indexAnimation = 1;
+            var offset = 60;
+            var yearCount = 8;
+            var indexAnimation = 0;
+            var linearSpeed = 150;
+            var height = 40;
+            var yPad = 10;
+            var yOffset = 60;
+            var relCount = 4;
+            var relYears = 2;
+            var yearWidth;
+
+
+            function iniOnLoad() {
+
+                var canvas = document.getElementById('myCanvas');
+                var context = canvas.getContext('2d');
+                var width = context.canvas.width;
+                yearWidth = width / yearCount / 4;
+                drawYearScale(context);
+
+
+
+                var blocks = document.getElementById('blocks');
+                var innerHtml = "";
+                for (let i = 0; i < 3; i++) {
+                    let top = offset + i * (40 + yPad);
+                    let width = 3 * 5.5 * yearWidth;
+                    innerHtml += "<div id='LTS" + i + "' class='block' style='top:" + top + "px;left:" + (4 * i * yearWidth) +
+                            "px;width:" + width + "px'>&nbsp;</div>";
+
+                }
+
+
+                for (let i = 0; i < 12; i++) {
+                    let top = offset + Math.floor(i / 4) * (40 + yPad);
+                    let width = yearWidth;
+                    innerHtml += "<div id='cls" + i + "' class='block' style='top:" + top + "px;left:" + (i * yearWidth) +
+                            "px;width:" + width + "px'>&nbsp;</div>";
+
+                }
+
+
+
+
+                blocks.innerHTML = innerHtml;
+                indexAnimation = 1;
+
+            }
+
+
+            function animationChangeReleases() {
+                console.log("animationChangeReleases")
+
+
+                for (let i = 1; i < 3; i++) {
+                    var tlsBlock = document.getElementById('LTS' + i);
+                    tlsBlock.animate([
+                        // keyframes
+                        {opacity: '1.0'},
+                        {opacity: '0.0'},
+                    ], {
+                        // timing options
+                        duration: 500,
+                        iterations: 1,
+                        fill: "forwards",
+
+                    });
+                }
+
+                var block1 = document.getElementById('cls0');
+                block1.innerHTML = "<p id='label0' style='width:100px'>JDK 8</p>"
+
+
+                for (let i = 1; i < 12; i++) {
+                    let top = offset + Math.floor(i / 4) * (40 + yPad);
+                    let newtop = offset + i * (40 + yPad);
+                    var block = document.getElementById('cls' + i);
+
+                    block.innerHTML = "<p id='label" + i + "' style='position:absolute;left:30px;width:100px;background-color: rgba(200, 200, 255, 0.5);'>" + (8 + i) + " (" + (2017 + Math.floor(i / 2)) + (i % 2 === 0 ? ".3)" : ".9)") + "</p>"
+                    if (i < 9) {
+                        block.animate([
+                            // keyframes
+                            {top: top + "px"},
+                            {top: newtop + "px"},
+                        ], {
+                            // timing options
+                            duration: 1000,
+                            iterations: 1,
+                            fill: "forwards",
+
+                        });
+                    } else {
+                        block.animate([
+                            // keyframes
+                            {opacity: '1.0'},
+                            {opacity: '0.0'},
+                        ], {
+                            // timing options
+                            duration: 500,
+                            iterations: 1,
+                            fill: "forwards",
+
+                        });
+
+                    }
+
+                }
+                indexAnimation = 2;
+            }
+
+            function longTimeSupportRelease() {
+                console.log("longTimeSupportRelease");
+                for (let i = 1; i < 3; i++) {
+                    var tlsBlock = document.getElementById('LTS' + i);
+                    let top = tlsBlock.style.top;
+                    let left = tlsBlock.style.left;
+                    let newtop = offset + 3 * i * (40 + yPad);
+                    let newLeft = 3 * i * yearWidth;
+
+                    tlsBlock.innerHTML = "<p style='position:relative;left:140px;'>(LTS)</p>"
+
+
+                    tlsBlock.animate([
+                        // keyframes
+                        {opacity: '0.0', top: top, left: left},
+                        {opacity: '1.0', top: newtop + "px", left: newLeft + "px"},
+                    ], {
+                        // timing options
+                        duration: 500,
+                        iterations: 1,
+                        fill: "forwards",
+
+                    });
+                }
+                indexAnimation = 3;
+            }
+
+            function animationChangeReleaseBinaries() {
+                console.log("animationChangeReleases");
+                for (let i = 1; i < 3; i++) {
+                    var tlsBlock = document.getElementById('LTS' + i);
+                    tlsBlock.style.top =  offset + 3 * i * (40 + yPad) + "px";
+                    tlsBlock.style.left = 3 * i * yearWidth + "px";
+
+                    tlsBlock.innerHTML = "<p style='position:absolute;top:-15px;left:30px;width:500px'>Oracle JDK "+(8+i*3)+" (LTS) Oracle commercial licence</p>"
+
+                }
+                 
+
+
+
+                for (let i = 1; i < 9; i++) {
+                    let top = offset + i * (40 + yPad);
+                    let newtop = offset + i * (40 + yPad) + 15;
+
+                    var block = document.getElementById('cls' + i);
+                    block.style.top = top + "px";
+                    block.animate([
+                        // keyframes
+                        {background: "blue", top: top + "px", height: "40px"},
+                        {background: "red", top: newtop + "px", height: "25px"},
+                    ], {
+                        // timing options
+                        duration: 1000,
+                        iterations: 1,
+                        fill: "forwards",
+
+                    });
+                    block.innerHTML = "<p id='label" + i +
+                            "' style='position:absolute;top:-10px;left:30px;width:500px;background-color: rgba(200, 200, 255, 0.5);'> Oracle OpenJDK " + (8 + i) + " (" + (2017 + Math.floor(i / 2)) + (i % 2 === 0 ? ".3)" : ".9)") + " GPLv2  Licence</p>"
+
+                }
+                indexAnimation = 4;
+            }
+
+
+            window.requestAnimFrame = (function (callback) {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                        function (callback) {
+                            window.setTimeout(callback, 1000 / 60);
+                        };
+            })();
+
+            window.addEventListener('message', function (event) {
+                if (event.data) {
+                    if (event.data === "restartAnimation") {
+                        restartAnimation();
+                    } else if (event.data === "nextAnimation") {
+                        nextAnimation();
+                    }
+
+                }
+            });
+
+            function restartAnimation() {
+                iniOnLoad();
+
+            }
+
+            function nextAnimation() {
+                if (indexAnimation === 1) {
+                    indexAnimation++;
+
+                    animationChangeReleases();
+
+                } else if (indexAnimation === 2) {
+                    indexAnimation++;
+                    longTimeSupportRelease();
+                } else if (indexAnimation === 3) {
+                    indexAnimation++;
+                    animationChangeReleaseBinaries();
+                }
+            }
+
+
+
+            function drawYearScale(context) {
+                var x0 = 20;
+                var width = context.canvas.width;
+                var height = context.canvas.height;
+
+                var yearWidth = width / (yearCount * 2);
+
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.lineWidth = 3;
+                context.font = "20px Arial";
+                //----x axis-----
+                context.moveTo(0, x0);
+                context.lineTo(width, x0);
+
+                //---X arrow---
+                context.moveTo(width, x0);
+                context.lineTo(width - 15, x0 + 5);
+                context.moveTo(width, x0);
+                context.lineTo(width - 15, x0 - 5);
+                context.stroke();
+                //X - signs
+                var yearWidth = width / (yearCount * 2);
+                for (var i = 0; i < (yearCount * 2); i++) {
+                    let x = i * yearWidth;
+                    context.beginPath();
+                    context.strokeStyle = "black";
+
+                    context.lineWidth = 1;
+                    context.moveTo(x, x0 - 5);
+                    context.lineTo(x, x0 + height);
+                    context.stroke();
+                    context.beginPath();
+                    context.fillText(i + "y", x + 10, x0 - 3);
+                    context.lineWidth = 3;
+                    context.moveTo(x, x0 - 5);
+                    context.lineTo(x, x0 + 5);
+                    context.stroke();
+                }
+
+
+
+            }
+
+        </script>
+    </head>
+    <body onload="iniOnLoad();">
+        <div id="blocks" style="position: absolute;width: 100%; height: 100%;"> 
+
+        </div>
+        <canvas id="myCanvas" width="800" height="400">
+
+        </canvas>
+
+    </body>
+</html>      
