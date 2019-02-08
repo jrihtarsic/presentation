@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Train release</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .pck {
+                background-color: red; 
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 50px;
+                width: 50px;
+                overflow: hidden;
+                border: 1px solid black;
+                
+                
+            }
+            #train {
+                background: transparent url("images/train.svg") no-repeat scroll left top; 
+                background-size: 100% 100%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 200px;
+                width: 400px;
+                overflow: hidden;
+                top: 200px;
+                left:  200px;
+                animation: trainMotion 10s 5;
+
+            }
+            
+            /* The animation code */
+            @keyframes trainMotion {
+                0% {transform: translate(-800px,0px) }
+                30% {transform: translate(-20px,0px) }
+                35% {transform: translate(0px,0px)  }
+                65% {transform: translate(0px,0px) }
+                70% {transform: translate(20px,0px)}
+                100% {transform: translate(800px,0px)}
+            }
+            
+            /* The animation code */
+            @keyframes trainLoad {
+                0% {transform: scale(0.0001) }
+                35% {transform: scale(0.0001)  }
+                40% {transform: scale(1.2) }
+                45% {transform: scale(1.0) }
+                100% {transform: scale(1.0)}
+            }
+
+
+        </style>
+        
+
+
+
+    </head>
+    <body  >
+        <div id="train"  >
+            <div id="package1" class="pck" style="background-color: blue;top:80px;left: 30px; animation: trainLoad 10s 5 1s;"  ></div>
+            <div id="package2" class="pck" style="background-color: green;top:80px;left: 100px; animation: trainLoad 10s 5 ;"></div>
+            <div id="package3" class="pck" style="background-color: red;top:30px;left: 60px; animation: trainLoad 10s 5 0.5s;" ></div>
+            
+        </div>
+    </body>
+</html>      

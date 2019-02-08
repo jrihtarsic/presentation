@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>two year release</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            div .car {
+                /*background: transparent url("images/modelT-car-1.svg") no-repeat scroll left top; */
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                height: 400px;
+                width: 800px;
+                overflow: hidden;
+
+
+            }
+
+
+        </style>
+        <script>
+            var carStage = 1;
+
+            function initOnLoad() {
+                carStage = 1;
+                var carholder = document.getElementById('carholder');
+                var innertHtml = "";
+                for (var i = 1; i < 7; i++) {
+                    innertHtml += "<div id='car" + i + "' class='car'"
+                            + " style='background: transparent url(images/modelT-car-" + i + ".svg); background-size: 100% 100%;visibility: "
+                            + (i === 1 ? "visible " : "hidden ")  + "' > </div>";
+                }
+                console.log(innertHtml);
+                carholder.innerHTML = innertHtml;
+                setTimeout(function () {
+                    showNextCarStage();
+                }, 2000);
+            }
+
+            function showNextCarStage() {
+                console.log("get car stage " + carStage);
+                var car = document.getElementById('car' + (++carStage));
+                car.style.visibility = "visible";
+
+                car.animate([
+                    // keyframes
+                    {opacity: '0.0'},
+                    {opacity: '1.0'},
+                ], {
+                    // timing options
+                    duration: 1000,
+                    iterations: 1
+                });
+
+                if (carStage < 6) {
+                    setTimeout(function () {
+                        showNextCarStage();
+                    }, 2000);
+                }
+
+
+
+            }
+
+        </script>
+    </head>
+    <body onload="initOnLoad()">
+        <div id="carholder"  >
+
+        </div>
+
+    </body>
+</html>      

@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>two year release</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+        <script>
+
+            var yearCount = 8;
+            var indexAnimation = 0;
+            var linearSpeed = 150;
+            var height = 40;
+            var yPad = 10;
+            var yOffset = 60;
+            var relCount = 4;
+            var relYears = 2;
+            var release = {
+                x: 0,
+                y: yPad,
+                width: 0,
+                height: height,
+                borderWidth: 1,
+                stroke: "black",
+                fill: "#8ED6FF",
+                title: "Release "
+            };
+
+
+
+            var release1 = {
+                x: 0,
+                y: 75,
+                width: 0,
+                height: 50,
+                borderWidth: 1,
+                stroke: "black",
+                fill: "#8ED6FF",
+                title: "Release X"
+            };
+            var release2 = {
+                x: 0,
+                y: 130,
+                width: 0,
+                height: 50,
+                borderWidth: 1,
+                stroke: "black",
+                fill: "#8ED6FF",
+                title: "Release X +1"
+            };
+
+            window.requestAnimFrame = (function (callback) {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                        function (callback) {
+                            window.setTimeout(callback, 1000 / 60);
+                        };
+            })();
+
+            window.addEventListener('message', function (event) {
+                if (event.data) {
+                    if (event.data === "restartAnimation") {
+                        restartAnimation();
+                    } else if (event.data === "nextAnimation") {
+                        nextAnimation();
+                    }
+
+                }
+            });
+
+            function restartAnimation() {
+                iniOnLoad();
+
+            }
+
+            function nextAnimation() {
+                if (indexAnimation === 1) {
+                    indexAnimation++;
+                    animationSubReleases();
+
+                } else if (indexAnimation === 2) {
+                    indexAnimation++;
+                    startAnimationWithReleaseDelay(0.75);
+
+                }
+
+
+            }
+
+
+            function drawRectangle(rect, context, yearWidth, drawReleases) {
+                context.beginPath();
+                context.rect(rect.x, rect.y, rect.width, rect.height);
+                context.fillStyle = rect.fill;
+                context.fill();
+                context.lineWidth = rect.borderWidth;
+                context.strokeStyle = rect.stroke;
+                context.stroke();
+                if (drawReleases) {
+                    drawReleaseLine(context, rect.x + yearWidth * 0.5, rect.y, rect.height, rect.x + rect.width);
+                    drawReleaseLine(context, rect.x + yearWidth * 1.0, rect.y, rect.height, rect.x + rect.width);
+                    drawReleaseLine(context, rect.x + yearWidth * 1.5, rect.y, rect.height, rect.x + rect.width);
+                }
+                context.stroke();
+
+
+                context.strokeStyle = rect.stroke;
+                context.fillStyle = rect.stroke;
+                context.font = "20px Arial";
+                context.fillText(rect.title, rect.x + 10, rect.y + rect.height - 5);
+
+            }
+            function animate( canvas, context, startTime, delayRelease) {
+
+                if (indexAnimation === 2) {
+                    return;
+                }
+
+                if (delayRelease > 0) {
+                    // make next drawing slower.. 
+                    linearSpeed = 50;
+                } else {
+                    linearSpeed = 150;
+                }
+
+                var width = context.canvas.width;
+                var yearWidth = width / yearCount;
+                // update
+                var time = (new Date()).getTime() - startTime;
+                // pixels / second
+                var newX = linearSpeed * time / 1000;
+
+
+                for (let i = 0; i < relCount; i++) {
+
+                    release.x = i * (relYears + delayRelease) * yearWidth;
+                    release.y = yOffset + i * (yPad + height);
+                    release.title = "Release " + i;
+                    release.width = newX - release.x;
+                    release.width = release.width > 5.5 * yearWidth?5.5 * yearWidth:release.width
+                    if (release.width > 0) {
+                        drawRectangle(release, context, yearWidth, indexAnimation === 3);
+                    }
+
+
+                    let delayedRelease = i * (relYears + delayRelease) * yearWidth;
+                    if (i > 0 && newX > i * relYears * yearWidth && newX < delayedRelease) {
+                        let delay = {
+                            x: i * relYears * yearWidth,
+                            y: release.y,
+                            width: newX - i * relYears * yearWidth,
+                            height: height,
+                            borderWidth: 1,
+                            stroke: "red",
+                            fill: "red",
+                            title: "delay"
+                        };
+
+                        drawRectangle(delay, context, yearWidth, false);
+                    }
+
+                }
+
+                if (newX < width - 5) {
+                    // request new frame
+                    requestAnimFrame(function () {
+                        animate(canvas, context, startTime, delayRelease);
+                    });
+                }
+            }
+
+            function drawReleaseLine(context, x, y, h, reference) {
+                if (x < reference) {
+                    context.beginPath();
+                    context.strokeStyle = "black";
+                    context.lineWidth = 3;
+
+                    context.moveTo(x, y);
+                    context.lineTo(x, y + h);
+                    context.stroke();
+                }
+            }
+
+            function animationSubReleases() {
+                var canvas = document.getElementById('myCanvas');
+                var context = canvas.getContext('2d');
+                var width = context.canvas.width;
+                var yearWidth = width / yearCount;
+                context.strokeStyle = "black";
+                    
+
+                for (let i = 0; i < relCount; i++) {
+
+                    release.x = i * (relYears) * yearWidth;
+                    release.y = yOffset + i * (yPad + height);
+                    release.title = "Release " + i;
+                    release.width = 5.5*yearWidth;
+                    if (release.width > 0) {
+                        drawRectangle(release, context, yearWidth, true);
+                    }
+
+                }
+
+
+            }
+
+            function iniOnLoad() {
+                indexAnimation = 1;
+                startAnimationWithReleaseDelay(0);
+            }
+
+            function startAnimationWithReleaseDelay(releaseDelay) {
+                var canvas = document.getElementById('myCanvas');
+                var context = canvas.getContext('2d');
+          
+                //clear
+                context.clearRect(0, 0, canvas.width, canvas.height);
+
+                drawYearScale(context);
+
+                // wait before start
+                setTimeout(function () {
+                    var startTime = (new Date()).getTime();
+                    animate(canvas, context, startTime, releaseDelay);
+                }, 1000);
+
+
+            }
+
+            function drawYearScale(context) {
+                var x0 = 20;
+                var width = context.canvas.width;
+                var yearWidth = width / yearCount;
+
+
+                context.beginPath();
+                context.strokeStyle = "black";
+                context.lineWidth = 3;
+                context.font = "20px Arial";
+                //----x axis-----
+                context.moveTo(0, x0);
+                context.lineTo(width, x0);
+
+                //---X arrow---
+                context.moveTo(width, x0);
+                context.lineTo(width - 15, x0 + 5);
+                context.moveTo(width, x0);
+                context.lineTo(width - 15, x0 - 5);
+                context.stroke();
+                //X - signs
+                var yearWidth = width / yearCount;
+                for (var i = 0; i < yearCount; i++) {
+                    let x = i * yearWidth;
+                    context.beginPath();
+                    context.strokeStyle = "black";
+            
+                    context.lineWidth = 1;
+                    context.moveTo(x, x0 - 5);
+                    context.lineTo(x, x0 + 250);
+                    context.stroke();
+                    context.beginPath();
+                    context.fillText(i + "y", x + 10, x0 - 3);
+                    context.lineWidth = 3;
+                    context.moveTo(x, x0 - 5);
+                    context.lineTo(x, x0 + 5);
+                    context.stroke();
+                }
+
+
+
+            }
+
+        </script>
+    </head>
+    <body onload="iniOnLoad()">
+
+        <canvas id="myCanvas" width="800" height="400"></canvas>
+
+    </body>
+</html>      
